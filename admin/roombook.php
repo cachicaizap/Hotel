@@ -22,23 +22,20 @@ if(!isset($_SESSION["user"]))
 				$re = mysqli_query($con,$sql);
 				while($row=mysqli_fetch_array($re))
 				{
-					$title = $row['Title'];
+					
 					$fname = $row['FName'];
 					$lname = $row['LName'];
 					$email = $row['Email'];
-					$nat = $row['National'];
-					$country = $row['Country'];
 					$Phone = $row['Phone'];
 					$troom = $row['TRoom'];
 					$nroom = $row['NRoom'];
 					$bed = $row['Bed'];
 					$non = $row['NRoom'];
-					$meal = $row['Meal'];
 					$cin = $row['cin'];
-					$cout = $row['cout'];
 					$sta = $row['stat'];
 					$days = $row['nodays'];
-					
+					$inicio_hora=$row['InicioHora'];
+					$fin_hora=$row['FinHora'];
 				
 				
 				}
@@ -165,12 +162,12 @@ Confirmación de reserva
                                 <table class="table">
                                     <tr>
                                             <th>DESCRIPCION</th>
-                                            <th>INFORMATION</th>
+                                            <th>INFORMACION</th>
                                             
                                         </tr>
                                         <tr>
-                                            <th>nombre</th>
-                                            <th><?php echo $title.$fname.$lname; ?> </th>
+                                            <th>Nombre</th>
+                                            <th><?php echo $fname.$lname; ?> </th>
                                             
                                         </tr>
 										<tr>
@@ -179,37 +176,22 @@ Confirmación de reserva
                                             
                                         </tr>
 										<tr>
-                                            <th>Nacionalidad </th>
-                                            <th><?php echo $nat; ?></th>
-                                            
-                                        </tr>
-										<tr>
-                                            <th>Pais </th>
-                                            <th><?php echo $country;  ?></th>
-                                            
-                                        </tr>
-										<tr>
                                             <th> No Telefono</th>
                                             <th><?php echo $Phone; ?></th>
                                             
                                         </tr>
 										<tr>
-                                            <th>Tipo de la habitación</th>
+                                            <th>Area Deportiva</th>
                                             <th><?php echo $troom; ?></th>
                                             
                                         </tr>
 										<tr>
-                                            <th>No 	De la habitación </th>
+                                            <th>No 	De Area Deportiva </th>
                                             <th><?php echo $nroom; ?></th>
                                             
                                         </tr>
 										<tr>
-                                            <th>Régimen de comidas </th>
-                                            <th><?php echo $meal; ?></th>
-                                            
-                                        </tr>
-										<tr>
-                                            <th>Lecho </th>
+                                            <th>Asistente en Area</th>
                                             <th><?php echo $bed; ?></th>
                                             
                                         </tr>
@@ -219,17 +201,24 @@ Confirmación de reserva
                                             
                                         </tr>
 										<tr>
-                                            <th>Fecha de salida</th>
-                                            <th><?php echo $cout; ?></th>
+                                            <th>Hora de Inicio</th>
+                                            <th><?php echo $inicio_hora; ?></th>
                                             
                                         </tr>
 										<tr>
-                                            <th>No de dias</th>
+                                            <th>Hora de Fin</th>
+                                            <th><?php echo $fin_hora; ?></th>
+                                            
+                                        </tr>
+										
+
+										<tr>
+                                            <th>No de Horas </th>
                                             <th><?php echo $days; ?></th>
                                             
                                         </tr>
 										<tr>
-                                            <th>Nivel de estado</th>
+                                            <th>Estado de la Reserva</th>
                                             <th><?php echo $sta; ?></th>
                                             
                                         </tr>
@@ -250,12 +239,12 @@ Confirmación de reserva
 														<label>Seleccione la Conformación</label>
 														<select name="conf"class="form-control">
 															<option value selected>	</option>
-															<option value="Conform">Conform</option>
+															<option value="Conform">Confirmar</option>
 															
 															
 														</select>
 										 </div>
-							<input type="submit" name="co" value="Conform" class="btn btn-success">
+							<input type="submit" name="co" value="Confirmar" class="btn btn-success">
 							
 							</form>
                         </div>
