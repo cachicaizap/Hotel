@@ -179,7 +179,7 @@ INFORMACION PERSONAL
 
 									else
 									{
-										$new ="Not Conform";
+										$new ="No Confirmada";
                                         
                                     //Calculo de tiempo de estancia     
                                         $hora1= new DateTime("$_POST[hora_entrada]");

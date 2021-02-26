@@ -73,10 +73,10 @@ if(!isset($_SESSION["user"]))
                         <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Reserva de habitacion</a>
                     </li>
                     <li>
-                        <a class="active-menu" href="payment.php"><i class="fa fa-qrcode"></i> Pago</a>
+                        <a class="active-menu" href="payment.php"><i class="fa fa-qrcode"></i> Reservaciones Confirmadas</a>
                     </li>
                     <li>
-                        <a  href="profit.php"><i class="fa fa-qrcode"></i> Lucro</a>
+                        <a  href="profit.php"><i class="fa fa-qrcode"></i> Tiempo de Reservaciones</a>
                     </li>
                     <li>
                         <a href="logout.php" ><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión

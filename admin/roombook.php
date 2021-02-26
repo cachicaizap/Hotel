@@ -161,13 +161,13 @@ Confirmación de reserva
 							<div class="table-responsive">
                                 <table class="table">
                                     <tr>
-                                            <th>DESCRIPCION</th>
-                                            <th>INFORMACION</th>
+                                            <th><h4>DESCRIPCION</h4></th>
+                                            <th><h4>INFORMACION</h4></th>
                                             
                                         </tr>
                                         <tr>
                                             <th>Nombre</th>
-                                            <th><?php echo $fname.$lname; ?> </th>
+                                            <th><?php echo $fname." ".$lname; ?> </th>
                                             
                                         </tr>
 										<tr>
@@ -297,22 +297,22 @@ Confirmación de reserva
 						while($crow=mysqli_fetch_array($cre))
 						{
 							$cr = $cr + 1;
-							$cs = $crow['troom'];
+							$cs = $crow['TRoom'];
 							
-							if($cs=="Superior Room"  )
+							if($cs=="Cancha Futbol"  )
 							{
 								$csc = $csc + 1;
 							}
 							
-							if($cs=="Guest House" )
+							if($cs=="Cancha Tenis" )
 							{
 								$cgh = $cgh + 1;
 							}
-							if($cs=="Single Room" )
+							if($cs=="Cancha Basketball" )
 							{
 								$csr = $csr + 1;
 							}
-							if($cs=="Deluxe Room" )
+							if($cs=="Piscina" )
 							{
 								$cdr = $cdr + 1;
 							}
@@ -324,14 +324,14 @@ Confirmación de reserva
 					<div class="col-md-4 col-sm-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                   Detalles de habitaciones disponibles
+                   Detalles de Áreas Deportivas
 
                         </div>
                         <div class="panel-body">
 						<table width="200px">
 							
 							<tr>
-								<td><b>Habitación superior	 </b></td>
+								<td><b>Cancha de Fútbol	 </b></td>
 								<td><button type="button" class="btn btn-primary btn-circle"><?php  
 									$f1 =$sc - $csc;
 									if($f1 <=0 )
@@ -346,7 +346,7 @@ Confirmación de reserva
 								?> </button></td> 
 							</tr>
 							<tr>
-								<td><b>Casa de huespedes</b>	 </td>
+								<td><b>Cancha de Tennis</b>	 </td>
 								<td><button type="button" class="btn btn-primary btn-circle"><?php 
 								$f2 =  $gh -$cgh;
 								if($f2 <=0 )
@@ -360,7 +360,7 @@ Confirmación de reserva
 								?> </button></td> 
 							</tr>
 							<tr>
-								<td><b>Habitación individual </b></td>
+								<td><b>Cancha de Basketball </b></td>
 								<td><button type="button" class="btn btn-primary btn-circle"><?php
 								$f3 =$sr - $csr;
 								if($f3 <=0 )
@@ -374,7 +374,7 @@ Confirmación de reserva
 								?> </button></td> 
 							</tr>
 							<tr>
-								<td><b>Habitación de lujo</b>	 </td>
+								<td><b>Piscina</b>	 </td>
 								<td><button type="button" class="btn btn-primary btn-circle"><?php 
 								
 								$f4 =$dr - $cdr; 
@@ -388,7 +388,7 @@ Confirmación de reserva
 								?> </button></td> 
 							</tr>
 							<tr>
-								<td><b>Total de habitaciones</b> </td>
+								<td><b>Total de Áreas Deportivas</b> </td>
 								<td> <button type="button" class="btn btn-danger btn-circle"><?php 
 								
 								$f5 =$r-$cr; 
@@ -547,14 +547,14 @@ Confirmación de reserva
 														$fintot = $ttot + $mepr + $btot ;
 															
 															//echo "<script type='text/javascript'> alert('$count_date')</script>";
-														$psql = "INSERT INTO `payment`(`id`, `title`, `fname`, `lname`, `troom`, `tbed`, `nroom`, `cin`, `cout`, `ttot`,`meal`, `mepr`, `btot`,`fintot`,`noofdays`) VALUES ('$id','$title','$fname','$lname','$troom','$bed','$nroom','$cin','$cout','$ttot','$meal','$mepr','$btot','$fintot','$days')";
+														$psql = "INSERT INTO `payment`(`id`, `FName`, `LName`, `Email`, `Phone`, `TRoom`, `Bed`, `NRoom`, `cin`, `stat`, `nodays`, `InicioHora`, `FinHora`) VALUES ('$id','$fname','$lname','$email','$Phone','$troom','$bed','$nroom','$cin','Confirmar','$days','$inicio_hora','$fin_hora')";
 														
 														if(mysqli_query($con,$psql))
-														{	$notfree="NotFree";
-															$rpsql = "UPDATE `room` SET `place`='$notfree',`cusid`='$id' where bedding ='$bed' and type='$troom' ";
+														{	$notfree="Confirmar";
+															$rpsql = "UPDATE `room` SET `place`='$notfree',`cusid`='$id' where bedding ='Single' and type='Superior Room' ";
 															if(mysqli_query($con,$rpsql))
 															{
-															echo "<script type='text/javascript'> alert('Booking Conform')</script>";
+															echo "<script type='text/javascript'> alert('Reserva Confirmada')</script>";
 															echo "<script type='text/javascript'> window.location='roombook.php'</script>";
 															}
 															
