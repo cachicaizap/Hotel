@@ -98,8 +98,7 @@ INFORMACION PERSONAL
                                                 <option value="Cancha Futbol">Cancha de Futbol</option>
                                                 <option value="Cancha Tennis">Cancha de Tennis</option>
 												<option value="Area Golf">Area de Golf</option>
-												<option value="Piscina">Piscina
-</option>
+												<option value="Piscina">Piscinas</option>
                                             </select>
                               </div>
 
