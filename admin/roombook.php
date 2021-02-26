@@ -22,38 +22,20 @@ if(!isset($_SESSION["user"]))
 				$re = mysqli_query($con,$sql);
 				while($row=mysqli_fetch_array($re))
 				{
-<<<<<<< HEAD
 					
 					$fname = $row['FName'];
 					$lname = $row['LName'];
 					$email = $row['Email'];
-=======
-					$title = $row['Title'];
-					$fname = $row['FName'];
-					$lname = $row['LName'];
-					$email = $row['Email'];
-					$nat = $row['National'];
-					$country = $row['Country'];
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
 					$Phone = $row['Phone'];
 					$troom = $row['TRoom'];
 					$nroom = $row['NRoom'];
 					$bed = $row['Bed'];
 					$non = $row['NRoom'];
-<<<<<<< HEAD
 					$cin = $row['cin'];
 					$sta = $row['stat'];
 					$days = $row['nodays'];
 					$inicio_hora=$row['InicioHora'];
 					$fin_hora=$row['FinHora'];
-=======
-					$meal = $row['Meal'];
-					$cin = $row['cin'];
-					$cout = $row['cout'];
-					$sta = $row['stat'];
-					$days = $row['nodays'];
-					
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
 				
 				
 				}
@@ -180,21 +162,12 @@ Confirmación de reserva
                                 <table class="table">
                                     <tr>
                                             <th>DESCRIPCION</th>
-<<<<<<< HEAD
                                             <th>INFORMACION</th>
                                             
                                         </tr>
                                         <tr>
                                             <th>Nombre</th>
                                             <th><?php echo $fname.$lname; ?> </th>
-=======
-                                            <th>INFORMATION</th>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <th>nombre</th>
-                                            <th><?php echo $title.$fname.$lname; ?> </th>
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
                                             
                                         </tr>
 										<tr>
@@ -203,43 +176,21 @@ Confirmación de reserva
                                             
                                         </tr>
 										<tr>
-<<<<<<< HEAD
-=======
-                                            <th>Nacionalidad </th>
-                                            <th><?php echo $nat; ?></th>
-                                            
-                                        </tr>
-										<tr>
-                                            <th>Pais </th>
-                                            <th><?php echo $country;  ?></th>
-                                            
-                                        </tr>
-										<tr>
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
                                             <th> No Telefono</th>
                                             <th><?php echo $Phone; ?></th>
                                             
                                         </tr>
 										<tr>
-<<<<<<< HEAD
                                             <th>Area Deportiva</th>
-=======
-                                            <th>Tipo de la habitación</th>
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
                                             <th><?php echo $troom; ?></th>
                                             
                                         </tr>
 										<tr>
-<<<<<<< HEAD
                                             <th>No 	De Area Deportiva </th>
-=======
-                                            <th>No 	De la habitación </th>
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
                                             <th><?php echo $nroom; ?></th>
                                             
                                         </tr>
 										<tr>
-<<<<<<< HEAD
                                             <th>Asistente en Area</th>
                                             <th><?php echo $bed; ?></th>
                                             
@@ -263,38 +214,11 @@ Confirmación de reserva
 
 										<tr>
                                             <th>No de Horas </th>
-=======
-                                            <th>Régimen de comidas </th>
-                                            <th><?php echo $meal; ?></th>
-                                            
-                                        </tr>
-										<tr>
-                                            <th>Lecho </th>
-                                            <th><?php echo $bed; ?></th>
-                                            
-                                        </tr>
-										<tr>
-                                            <th>Fecha de entrada</th>
-                                            <th><?php echo $cin; ?></th>
-                                            
-                                        </tr>
-										<tr>
-                                            <th>Fecha de salida</th>
-                                            <th><?php echo $cout; ?></th>
-                                            
-                                        </tr>
-										<tr>
-                                            <th>No de dias</th>
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
                                             <th><?php echo $days; ?></th>
                                             
                                         </tr>
 										<tr>
-<<<<<<< HEAD
                                             <th>Estado de la Reserva</th>
-=======
-                                            <th>Nivel de estado</th>
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
                                             <th><?php echo $sta; ?></th>
                                             
                                         </tr>
@@ -315,20 +239,12 @@ Confirmación de reserva
 														<label>Seleccione la Conformación</label>
 														<select name="conf"class="form-control">
 															<option value selected>	</option>
-<<<<<<< HEAD
 															<option value="Conform">Confirmar</option>
-=======
-															<option value="Conform">Conform</option>
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
 															
 															
 														</select>
 										 </div>
-<<<<<<< HEAD
 							<input type="submit" name="co" value="Confirmar" class="btn btn-success">
-=======
-							<input type="submit" name="co" value="Conform" class="btn btn-success">
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
 							
 							</form>
                         </div>

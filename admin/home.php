@@ -166,23 +166,12 @@ if(!isset($_SESSION["user"]))
                                             <th>#</th>
                                             <th>Nombre</th>
                                             <th>Email</th>
-<<<<<<< HEAD
 											<th>Area Deportiva</th>
 											<th>Asistente</th>
 											<th>Fecha de Solicitud</th>
 											<th>Estado</th>
 											<th>Más</th>
                                             
-=======
-                                            <th>Pais</th>
-											<th>Habitacion</th>
-											<th>Lecho</th>
-											<th>Comida</th>
-											<th>Registrarse</th>
-											<th>Revisa</th>
-											<th>estado</th>
-											<th>Más</th>
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
 											
                                         </tr>
                                     </thead>
@@ -200,24 +189,12 @@ if(!isset($_SESSION["user"]))
 												<th>".$trow['id']."</th>
 												<th>".$trow['FName']." ".$trow['LName']."</th>
 												<th>".$trow['Email']."</th>
-<<<<<<< HEAD
 												<th>".$trow['TRoom']."</th>
 												<th>".$trow['Bed']."</th>
 												<th>".$trow['cin']."</th>
 												<th>".$trow['stat']."</th>
 												
 												<th><a href='roombook.php?rid=".$trow['id']." ' class='btn btn-primary'>Aprobar</a></th>
-=======
-												<th>".$trow['Country']."</th>
-												<th>".$trow['TRoom']."</th>
-												<th>".$trow['Bed']."</th>
-												<th>".$trow['Meal']."</th>
-												<th>".$trow['cin']."</th>
-												<th>".$trow['cout']."</th>
-												<th>".$trow['stat']."</th>
-												
-												<th><a href='roombook.php?rid=".$trow['id']." ' class='btn btn-primary'>Action</a></th>
->>>>>>> 46249286e22c626a7e872097b40af93a281db85d
 												</tr>";
 										}	
 									

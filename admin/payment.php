@@ -110,18 +110,13 @@ if(!isset($_SESSION["user"]))
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
+                                            <th>#</th>
                                             <th>Nombre</th>
-											<th> Tipo de habitación</th>
-                                            <th>Tipo de cama</th>
-                                            <th>Registrarse</th>
-											<th>Revisa</th>
-											<th>No de la habitación</th>
-											<th>Tipo de comida</th>
-											
-                                            <th>Alquiler de la habitación</th>
-											<th>Bed Rent</th>
-											<th>Comidas </th>
-											<th>Gr.Total</th>
+                                            <th>Email</th>
+											<th>Área Deportiva</th>
+											<th>Fecha de Solicitud</th>
+                                            <th># Horas</th>
+											<th>Estado</th>
 											<th>Impresión</th>
                                             
                                         </tr>
@@ -130,7 +125,7 @@ if(!isset($_SESSION["user"]))
                                         
 									<?php
 										include ('db.php');
-										$sql="select * from payment";
+										$sql = "select * from payment";
 										$re = mysqli_query($con,$sql);
 										while($row = mysqli_fetch_array($re))
 										{
@@ -140,37 +135,28 @@ if(!isset($_SESSION["user"]))
 											if($id % 2 ==1 )
 											{
 												echo"<tr class='gradeC'>
-													<td>".$row['title']." ".$row['fname']." ".$row['lname']."</td>
-													<td>".$row['troom']."</td>
-													<td>".$row['tbed']."</td>
-													<td>".$row['cin']."</td>
-													<td>".$row['cout']."</td>
-													<td>".$row['nroom']."</td>
-													<td>".$row['meal']."</td>
-													
-													<td>".$row['ttot']."</td>
-													<td>".$row['mepr']."</td>
-													<td>".$row['btot']."</td>
-													<td>".$row['fintot']."</td>
-													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
+                                                    <th>".$row['id']."</th>
+												    <th>".$row['FName']." ".$row['LName']."</th>
+												    <th>".$row['Email']."</th>
+												    <th>".$row['TRoom']."</th>
+												    <th>".$row['cin']."</th>
+                                                    <th>".$row['nodays']."</th>
+												    <th>".$row['stat']."</th>
+
+													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary' target='_blank'> <i class='fa fa-print' ></i> Print</button></td>
 													</tr>";
 											}
 											else
 											{
 												echo"<tr class='gradeU'>
-													<td>".$row['title']." ".$row['fname']." ".$row['lname']."</td>
-													<td>".$row['troom']."</td>
-													<td>".$row['tbed']."</td>
-													<td>".$row['cin']."</td>
-													<td>".$row['cout']."</td>
-													<td>".$row['nroom']."</td>
-													<td>".$row['meal']."</td>
-													
-													<td>".$row['ttot']."</td>
-													<td>".$row['mepr']."</td>
-													<td>".$row['btot']."</td>
-													<td>".$row['fintot']."</td>
-													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
+                                                    <th>".$row['id']."</th>
+                                                    <th>".$row['FName']." ".$row['LName']."</th>
+                                                    <th>".$row['Email']."</th>
+                                                    <th>".$row['TRoom']."</th>
+                                                    <th>".$row['cin']."</th>
+                                                    <th>".$row['nodays']."</th>
+                                                    <th>".$row['stat']."</th>
+													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary' target='_blank'> <i class='fa fa-print' ></i> Print</button></td>
 													</tr>";
 											
 											}

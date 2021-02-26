@@ -1,8 +1,7 @@
-
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Invoice</title>
+		<title>REGISTRO DE RESERVACION</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
 		<script src="script.js"></script>
@@ -164,174 +163,94 @@ tr:hover .cut { opacity: 1; }
 	
 	<?php
 	ob_start();	
-	include ('db.php');
+	include('db.php');
 
 	$pid = $_GET['pid'];
 	
 	
-	
-	$sql ="select * from payment where id = '$pid' ";
+    $sql ="select * from payment where id = '$pid' ";
 	$re = mysqli_query($con,$sql);
 	while($row=mysqli_fetch_array($re))
 	{
 		$id = $row['id'];
-		$title = $row['title'];
-		$fname = $row['fname'];
-		$lname = $row['lname'];
-		$troom = $row['troom'];
-		$bed = $row['tbed'];
-		$nroom = $row['nroom'];
+		$fname = $row['FName'];
+		$lname = $row['LName'];
+        $email=$row['Email'];
+        $phone=$row['Phone'];
+		$troom = $row['TRoom'];
+		$bed = $row['Bed'];
+		$nroom = $row['NRoom'];
 		$cin = $row['cin'];
-		$cout = $row['cout'];
-		$meal = $row['meal'];
-		$ttot = $row['ttot'];
-		$mepr = $row['mepr'];
-		$btot = $row['btot'];
-		$fintot = $row['fintot'];
-		$days = $row['noofdays'];
-		
-		
-		
+		$estado = $row['stat'];
+        $n_dias= $row['nodays'];
+        $inicio_hora= $row['InicioHora'];
+        $fin_hora= $row['FinHora'];
 	
 	}
 	
-									$type_of_room = 0;       
-									if($troom=="Superior Room")
-									{
-										$type_of_room = 320;
-									
-									}
-									else if($troom=="Deluxe Room")
-									{
-										$type_of_room = 220;
-									}
-									else if($troom=="Guest House")
-									{
-										$type_of_room = 180;
-									}
-									else if($troom=="Single Room")
-									{
-										$type_of_room = 150;
-									}
-									
-									if($bed=="Single")
-									{
-										$type_of_bed = $type_of_room * 1/100;
-									}
-									else if($bed=="Double")
-									{
-										$type_of_bed = $type_of_room * 2/100;
-									}
-									else if($bed=="Triple")
-									{
-										$type_of_bed = $type_of_room * 3/100;
-									}
-									else if($bed=="Quad")
-									{
-										$type_of_bed = $type_of_room * 4/100;
-									}
-									else if($bed=="None")
-									{
-										$type_of_bed = $type_of_room * 0/100;
-									}
-									
-									if($meal=="Room only")
-									{
-										$type_of_meal=$type_of_bed * 0;
-									}
-									else if($meal=="Breakfast")
-									{
-										$type_of_meal=$type_of_bed * 2;
-									}else if($meal=="Half Board")
-									{
-										$type_of_meal=$type_of_bed * 3;
-									
-									}else if($meal=="Full Board")
-									{
-										$type_of_meal=$type_of_bed * 4;
-									}
 	
 	?>
 		<header>
-			<h1>Invoice</h1>
+			<h1>REGISTRO DE RESERVACION</h1>
 			<address >
-				<p>HOTEL AMANECER,</p>
-				<p>Nueva carretera de Kalmunai,<br>Batusai,<br>Sri Lanka.</p>
+				<p>Castillo de Amaguaña</p>
+				<p>Amaguaña,<br>Sangolqui.</p>
 				<p>(+94) 65 222 44 55</p>
 			</address>
 			<span><img alt="" src="assets/img/sun.png"></span>
 		</header>
 		<article>
-			<h1>	Recipiente</h1>
+			<h1>Recipiente</h1>
 			<address >
-				<p><?php echo $title.$fname." ".$lname ?> <br></p>
+				<p>Socio: <?php echo $fname." ".$lname ?> <br></p>
 			</address>
 			<table class="meta">
 				<tr>
-					<th><span >Factura #</span></th>
+					<th><span >Reservacion #</span></th>
 					<td><span ><?php echo $id; ?></span></td>
 				</tr>
 				<tr>
-					<th><span >Fecha</span></th>
-					<td><span ><?php echo $cout; ?> </span></td>
+					<th><span >Fecha Reservacion</span></th>
+					<td><span ><?php echo $cin; ?> </span></td>
 				</tr>
-				
+				<tr>
+					<th><span >Tiempo de Reserva</span></th>
+					<td><span ><?php echo $n_dias; ?> horas</span></td>
+				</tr>
+                <tr>
+					<th><span >Estado de la Reserva</span></th>
+					<td><span ><?php echo $estado; ?> </span></td>
+				</tr>
+
 			</table>
 			<table class="inventory">
 				<thead>
 					<tr>
-						<th><span >Item</span></th>
-						<th><span >No de dias</span></th>
-						<th><span >Tarifa</span></th>
-						<th><span >Cantidad</span></th>
-						<th><span >Precio</span></th>
+						<th><span >Area Deportiva</span></th>
+						<th><span >No. Area Deportiva</span></th>
+						<th><span >Asistente</span></th>
+						<th><span >Hora Inicio</span></th>
+						<th><span >Hora Finalizacion</span></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td><span ><?php echo $troom; ?></span></td>
-						<td><span ><?php echo $days; ?> </span></td>
-						<td><span data-prefix>$</span><span ><?php  echo $type_of_room;?></span></td>
-						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>$</span><span><?php echo $ttot; ?></span></td>
+						<td><span ><?php echo $nroom; ?> </span></td>
+						<td><span data-prefix></span><span><?php echo $bed; ?></span></td>
+						<td><span ><?php echo $inicio_hora;?> </span></td>
+                        <td><span ><?php echo $fin_hora;?> </span></td>
+						
 					</tr>
-					<tr>
-						<td><span ><?php echo $bed; ?>  Cama </span></td>
-						<td><span ><?php echo $days; ?></span></td>
-						<td><span data-prefix>$</span><span ><?php  echo $type_of_bed;?></span></td>
-						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>$</span><span><?php echo $btot; ?></span></td>
-					</tr>
-					<tr>
-						<td><span ><?php echo $meal; ?>  </span></td>
-						<td><span ><?php echo $days; ?></span></td>
-						<td><span data-prefix>$</span><span ><?php  echo $type_of_meal?></span></td>
-						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>$</span><span><?php echo $mepr; ?></span></td>
-					</tr>
+					
 				</tbody>
 			</table>
 			
-			<table class="balance">
-				<tr>
-					<th><span >Total</span></th>
-					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
-				</tr>
-				<tr>
-					<th><span >	Cantidad pagada
-</span></th>
-					<td><span data-prefix>$</span><span >0.00</span></td>
-				</tr>
-				<tr>
-					<th><span >Saldo adeudado</span></th>
-					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
-				</tr>
-			</table>
 		</article>
 		<aside>
 			<h1><span >Contáctenos</span></h1>
 			<div >
-				<p align="center">Email :- tusolutionweb@sgmail.com || Web :- http://tusolutionweb.blogspot.pe/ || Phone :- +94 65 222 44 55 </p>
+				<p align="center">Email tuemaiol@hotmail.com|| Web :- http://castilloAmaguaña.com/ || Phone :- +94 65 222 44 55 </p>
 			</div>
 		</aside>
 	</body>
@@ -342,12 +261,14 @@ $nul = null;
 $rpsql = "UPDATE `room` SET `place`='$free',`cusid`='$nul' where `cusid`='$id'";
 if(mysqli_query($con,$rpsql))
 {
+    /*
 	$delsql= "DELETE FROM `roombook` WHERE id='$id' ";
 	
 	if(mysqli_query($con,$delsql))
 	{
 	
 	}
+    */
 }
 ?>
 <?php 
