@@ -137,7 +137,7 @@ include('db.php');
 										<h4>SOL
   <span>SUBIR</span></h4>
 										<img src="images/1.jpg" alt=" " class="img-responsive">
-										<h5>Sabemos lo que amas</h5>
+										<h5>Sabemos lo que amaras</h5>
 										<p>Ofrecer a los huéspedes vistas únicas y encantadoras desde sus habitaciones con sus comodidades excepcionales, hace que Star Hotel sea uno de los mejores en su tipo. Pruebe nuestro menú de comida, servicios increíbles y un personal amable mientras esté aquí..</p>
 									</div>
 								</div>
