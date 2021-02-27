@@ -18,25 +18,24 @@ if(!isset($_SESSION["user"]))
 				$id = $_GET['rid'];
 				
 				
-				$sql ="Select * from roombook where id = '$id'";
+				$sql ="Select * from reservado where reserva = '$id'";
 				$re = mysqli_query($con,$sql);
 				while($row=mysqli_fetch_array($re))
 				{
 					
-					$fname = $row['FName'];
-					$lname = $row['LName'];
-					$email = $row['Email'];
-					$Phone = $row['Phone'];
-					$troom = $row['TRoom'];
-					$nroom = $row['NRoom'];
-					$bed = $row['Bed'];
-					$non = $row['NRoom'];
-					$cin = $row['cin'];
-					$sta = $row['stat'];
-					$days = $row['nodays'];
-					$inicio_hora=$row['InicioHora'];
-					$fin_hora=$row['FinHora'];
-				
+					$fname = $row['nombre'];
+					$lname = $row['apellido'];
+					$email = $row['email'];
+					$Phone = $row['telefono'];
+					$troom = $row['area'];
+					$nroom = $row['narea'];
+					$bed = $row['asistente'];
+					$cin = $row['fechaentrada'];
+					$sta = $row['estado'];
+					$days = $row['nhoras'];
+					$inicio_hora=$row['iniciohora'];
+					$fin_hora=$row['finhora'];
+					$are=$row['narea'];
 				
 				}
 					
@@ -239,7 +238,7 @@ Confirmación de reserva
 														<label>Seleccione la Conformación</label>
 														<select name="conf"class="form-control">
 															<option value selected>	</option>
-															<option value="Conform">Confirmar</option>
+															<option value="Confirmado">Confirmar</option>
 															
 															
 														</select>
@@ -251,147 +250,34 @@ Confirmación de reserva
                     </div>
 					</div>
 					
-					<?php
-						$rsql ="select * from room";
-						$rre= mysqli_query($con,$rsql);
-						$r =0 ;
-						$sc =0;
-						$gh = 0;
-						$sr = 0;
-						$dr = 0;
-						while($rrow=mysqli_fetch_array($rre))
-						{
-							$r = $r + 1;
-							$s = $rrow['type'];
-							$p = $rrow['place'];
-							if($s=="Superior Room" )
-							{
-								$sc = $sc+ 1;
-							}
-							
-							if($s=="Guest House")
-							{
-								$gh = $gh + 1;
-							}
-							if($s=="Single Room" )
-							{
-								$sr = $sr + 1;
-							}
-							if($s=="Deluxe Room" )
-							{
-								$dr = $dr + 1;
-							}
-							
-						
-						}
-						?>
-						
-						<?php
-						$csql ="select * from payment";
-						$cre= mysqli_query($con,$csql);
-						$cr =0 ;
-						$csc =0;
-						$cgh = 0;
-						$csr = 0;
-						$cdr = 0;
-						while($crow=mysqli_fetch_array($cre))
-						{
-							$cr = $cr + 1;
-							$cs = $crow['TRoom'];
-							
-							if($cs=="Cancha Futbol"  )
-							{
-								$csc = $csc + 1;
-							}
-							
-							if($cs=="Cancha Tenis" )
-							{
-								$cgh = $cgh + 1;
-							}
-							if($cs=="Cancha Basketball" )
-							{
-								$csr = $csr + 1;
-							}
-							if($cs=="Piscina" )
-							{
-								$cdr = $cdr + 1;
-							}
-							
-						
-						}
-				
-					?>
 					<div class="col-md-4 col-sm-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                   Detalles de Áreas Deportivas
+                   		Áreas Deportivas Disponibles
 
                         </div>
                         <div class="panel-body">
 						<table width="200px">
-							
-							<tr>
-								<td><b>Cancha de Fútbol	 </b></td>
-								<td><button type="button" class="btn btn-primary btn-circle"><?php  
-									$f1 =$sc - $csc;
-									if($f1 <=0 )
-									{	$f1 = "NO";
-										echo $f1;
-									}
-									else{
-											echo $f1;
-									}
-								
-								
-								?> </button></td> 
-							</tr>
-							<tr>
-								<td><b>Cancha de Tennis</b>	 </td>
-								<td><button type="button" class="btn btn-primary btn-circle"><?php 
-								$f2 =  $gh -$cgh;
-								if($f2 <=0 )
-									{	$f2 = "NO";
-										echo $f2;
-									}
-									else{
-											echo $f2;
-									}
 
-								?> </button></td> 
-							</tr>
-							<tr>
-								<td><b>Cancha de Basketball </b></td>
-								<td><button type="button" class="btn btn-primary btn-circle"><?php
-								$f3 =$sr - $csr;
-								if($f3 <=0 )
-									{	$f3 = "NO";
-										echo $f3;
-									}
-									else{
-											echo $f3;
-									}
+							<?php
+								$detsql ="select * from detalleareas";
+								$detre= mysqli_query($con,$detsql);
+								$f5 = 0;
+								while($row = mysqli_fetch_array($detre))
+								{
+									$f5 = $f5 + $row['total'];
+									echo"<tr>
+											<td><b>".$row['diciplina']."</b></td>
+											<td><button type='button' class='btn btn-primary btn-circle'>"
+											.$row['total']."</button></td>	
+										</tr>";
+								}
+							?>
 
-								?> </button></td> 
-							</tr>
-							<tr>
-								<td><b>Piscina</b>	 </td>
-								<td><button type="button" class="btn btn-primary btn-circle"><?php 
-								
-								$f4 =$dr - $cdr; 
-								if($f4 <=0 )
-									{	$f4 = "NO";
-										echo $f4;
-									}
-									else{
-											echo $f4;
-									}
-								?> </button></td> 
-							</tr>
 							<tr>
 								<td><b>Total de Áreas Deportivas</b> </td>
 								<td> <button type="button" class="btn btn-danger btn-circle"><?php 
-								
-								$f5 =$r-$cr; 
+
 								if($f5 <=0 )
 									{	$f5 = "NO";
 										echo $f5;
@@ -402,10 +288,7 @@ Confirmación de reserva
 								 ?> </button></td> 
 							</tr>
 						</table>
-						
-						
-						
-                        
+
 						
 						</div>
                         <div class="panel-footer">
@@ -447,128 +330,34 @@ Confirmación de reserva
 </html>
 
 <?php
-						if(isset($_POST['co']))
-						{	
-							$st = $_POST['conf'];
-							
-							 
-							
-							if($st=="Conform")
-							{
-									$urb = "UPDATE `roombook` SET `stat`='$st' WHERE id = '$id'";
-									
-								if($f1=="NO" )
-								{
-									echo "<script type='text/javascript'> alert('Sorry! Not Available Superior Room ')</script>";
-								}
-								else if($f2 =="NO")
-									{
-										echo "<script type='text/javascript'> alert('Sorry! Not Available Guest House')</script>";
-										
-									}
-									else if ($f3 == "NO")
-									{
-										echo "<script type='text/javascript'> alert('Sorry! Not Available Single Room')</script>";
-									}
-										else if($f4=="NO")
-										{
-										echo "<script type='text/javascript'> alert('Sorry! Not Available Deluxe Room')</script>";
-										}
-										
-										else if( mysqli_query($con,$urb))
-											{	
-												//echo "<script type='text/javascript'> alert('Guest Room booking is conform')</script>";
-												//echo "<script type='text/javascript'> window.location='home.php'</script>";
-												 $type_of_room = 0;       
-														if($troom=="Superior Room")
-														{
-															$type_of_room = 320;
-														
-														}
-														else if($troom=="Deluxe Room")
-														{
-															$type_of_room = 220;
-														}
-														else if($troom=="Guest House")
-														{
-															$type_of_room = 180;
-														}
-														else if($troom=="Single Room")
-														{
-															$type_of_room = 150;
-														}
-														
-														
-														
-														
-														if($bed=="Single")
-														{
-															$type_of_bed = $type_of_room * 1/100;
-														}
-														else if($bed=="Double")
-														{
-															$type_of_bed = $type_of_room * 2/100;
-														}
-														else if($bed=="Triple")
-														{
-															$type_of_bed = $type_of_room * 3/100;
-														}
-														else if($bed=="Quad")
-														{
-															$type_of_bed = $type_of_room * 4/100;
-														}
-														else if($bed=="None")
-														{
-															$type_of_bed = $type_of_room * 0/100;
-														}
-														
-														
-														if($meal=="Room only")
-														{
-															$type_of_meal=$type_of_bed * 0;
-														}
-														else if($meal=="Breakfast")
-														{
-															$type_of_meal=$type_of_bed * 2;
-														}else if($meal=="Half Board")
-														{
-															$type_of_meal=$type_of_bed * 3;
-														
-														}else if($meal=="Full Board")
-														{
-															$type_of_meal=$type_of_bed * 4;
-														}
-														
-														
-														$ttot = $type_of_room * $days * $nroom;
-														$mepr = $type_of_meal * $days;
-														$btot = $type_of_bed *$days;
-														
-														$fintot = $ttot + $mepr + $btot ;
-															
-															//echo "<script type='text/javascript'> alert('$count_date')</script>";
-														$psql = "INSERT INTO `payment`(`id`, `FName`, `LName`, `Email`, `Phone`, `TRoom`, `Bed`, `NRoom`, `cin`, `stat`, `nodays`, `InicioHora`, `FinHora`) VALUES ('$id','$fname','$lname','$email','$Phone','$troom','$bed','$nroom','$cin','Confirmar','$days','$inicio_hora','$fin_hora')";
-														
-														if(mysqli_query($con,$psql))
-														{	$notfree="Confirmar";
-															$rpsql = "UPDATE `room` SET `place`='$notfree',`cusid`='$id' where bedding ='Single' and type='Superior Room' ";
-															if(mysqli_query($con,$rpsql))
-															{
-															echo "<script type='text/javascript'> alert('Reserva Confirmada')</script>";
-															echo "<script type='text/javascript'> window.location='roombook.php'</script>";
-															}
-															
-															
-														}
-												
-											}
-									
-                                        
-							}	
+	$dipsql ="select disponible from areadeport where idarea= '$are'";
+	$dispre= mysqli_query($con,$dipsql);
+	$valor=0;
+	while($row=mysqli_fetch_array($dispre)){
+		$valor=$row['disponible'];
+	}
+
+	if(isset($_POST['co']))
+	{	
+		$st = $_POST['conf'];
+		if($st=="Confirmado")
+		{
+			$urb = "UPDATE `reservacion` SET `estado`='$st' WHERE idreserva = '$id'";	
+			if($valor == 0 )
+			{
+				echo "<script type='text/javascript'> alert('Lo Siento el área ".$troom." no esta disponible ')</script>";
+			}
+			else if( mysqli_query($con,$urb))
+			{
+				$valor=0;
+				$aredep = "UPDATE `areadeport` SET `disponible`= '$valor' WHERE idarea = '$are'";
+				if(mysqli_query($con,$aredep))
+				{									
+					echo "<script type='text/javascript'> alert('Reserva Confirmada')</script>";
+					echo "<script type='text/javascript'> window.location='home.php'</script>";
+				}
+			}	                        
+		}	
 					
-						}
-					
-									
-									
-							
-						?>
+	}
+?>

@@ -168,23 +168,23 @@ tr:hover .cut { opacity: 1; }
 	$pid = $_GET['pid'];
 	
 	
-    $sql ="select * from payment where id = '$pid' ";
+    $sql ="select * from reservado where reserva = '$pid' ";
 	$re = mysqli_query($con,$sql);
 	while($row=mysqli_fetch_array($re))
 	{
-		$id = $row['id'];
-		$fname = $row['FName'];
-		$lname = $row['LName'];
-        $email=$row['Email'];
-        $phone=$row['Phone'];
-		$troom = $row['TRoom'];
-		$bed = $row['Bed'];
-		$nroom = $row['NRoom'];
-		$cin = $row['cin'];
-		$estado = $row['stat'];
-        $n_dias= $row['nodays'];
-        $inicio_hora= $row['InicioHora'];
-        $fin_hora= $row['FinHora'];
+		$id = $row['reserva'];
+		$fname = $row['nombre'];
+		$lname = $row['apellido'];
+        $email=$row['email'];
+        $phone=$row['telefono'];
+		$troom = $row['area'];
+		$bed = $row['asistente'];
+		$nroom = $row['narea'];
+		$cin = $row['fechaentrada'];
+		$estado = $row['estado'];
+        $n_dias= $row['nhoras'];
+        $inicio_hora= $row['iniciohora'];
+        $fin_hora= $row['finhora'];
 	
 	}
 	

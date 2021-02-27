@@ -125,23 +125,26 @@ if(!isset($_SESSION["user"]))
                                         
 									<?php
 										include ('db.php');
-										$sql = "select * from payment";
+										$sql = "select * from reservado";
 										$re = mysqli_query($con,$sql);
 										while($row = mysqli_fetch_array($re))
 										{
 										
-											$id = $row['id'];
-											
+											$id = $row['reserva'];
+                                            $confirmaciones=$row['estado'];
+
+                                            if($confirmaciones=="Confirmado")
+											{
 											if($id % 2 ==1 )
 											{
 												echo"<tr class='gradeC'>
-                                                    <th>".$row['id']."</th>
-												    <th>".$row['FName']." ".$row['LName']."</th>
-												    <th>".$row['Email']."</th>
-												    <th>".$row['TRoom']."</th>
-												    <th>".$row['cin']."</th>
-                                                    <th>".$row['nodays']."</th>
-												    <th>".$row['stat']."</th>
+                                                    <th>".$row['reserva']."</th>
+												    <th>".$row['nombre']." ".$row['apellido']."</th>
+												    <th>".$row['email']."</th>
+												    <th>".$row['area']."</th>
+												    <th>".$row['fechaentrada']."</th>
+                                                    <th>".$row['nhoras']."</th>
+												    <th>".$row['estado']."</th>
 
 													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary' target='_blank'> <i class='fa fa-print' ></i> Print</button></td>
 													</tr>";
@@ -149,17 +152,19 @@ if(!isset($_SESSION["user"]))
 											else
 											{
 												echo"<tr class='gradeU'>
-                                                    <th>".$row['id']."</th>
-                                                    <th>".$row['FName']." ".$row['LName']."</th>
-                                                    <th>".$row['Email']."</th>
-                                                    <th>".$row['TRoom']."</th>
-                                                    <th>".$row['cin']."</th>
-                                                    <th>".$row['nodays']."</th>
-                                                    <th>".$row['stat']."</th>
-													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary' target='_blank'> <i class='fa fa-print' ></i> Print</button></td>
-													</tr>";
+                                                <th>".$row['reserva']."</th>
+                                                <th>".$row['nombre']." ".$row['apellido']."</th>
+                                                <th>".$row['email']."</th>
+                                                <th>".$row['area']."</th>
+                                                <th>".$row['fechaentrada']."</th>
+                                                <th>".$row['nhoras']."</th>
+                                                <th>".$row['estado']."</th>
+
+                                                <td><a href=print.php?pid=".$id ." <button class='btn btn-primary' target='_blank'> <i class='fa fa-print' ></i> Print</button></td>
+                                                </tr>";
 											
 											}
+                                        }
 										
 										}
 										

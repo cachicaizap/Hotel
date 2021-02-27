@@ -16,6 +16,7 @@ include('db.php')
      <!-- Google Fonts-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
    <link href="assets/css/main.css" rel="stylesheet" />
+
 </head>
 <body>
     <div id="wrapper">
@@ -91,38 +92,32 @@ INFORMACION PERSONAL
 
                         </div>
                         <div class="panel-body">
-								<div class="form-group">
-                                            <label>Area Deportiva*</label>
-                                            <select name="troom"  class="form-control" required>
-												<option value selected ></option>
-                                                <option value="Cancha Futbol">Cancha de Futbol</option>
-                                                <option value="Cancha Tennis">Cancha de Tennis</option>
-												<option value="Area Golf">Area de Golf</option>
-												<option value="Piscina">Piscinas</option>
-                                            </select>
-                              </div>
+							<div class="form-group">
+                                <label>Disciplina</label>
+                                <select id="troom" name="troom"  class="form-control" required onChange="recargarLista(this.value)">
+                                    <option value="0" >--Seleccione--</option>
+                                    <?php
+                                        $consultar="select * from disciplina";
+                                        $resultado= mysqli_query($con,$consultar);
+                                        while($row=mysqli_fetch_array($resultado))
+                                        {
+                                            echo"<option value=".$row['idtipo'].">".$row['nombre']."</option>";
+                                        }
+                                    ?>
+                                </select>
+                            </div>
 
-							  <div class="form-group">
-                                            <label>No. Area deportiva*</label>
-                                            <select name="nroom" class="form-control" required>
-												<option value selected ></option>
-                                                
-                                                <?php 
-                                                 include ('db.php');
-                                                 $sql="Select id from roombook";
-                                                 $respuesta=mysqli_query($con,$sql);
-                                                 while($row=mysqli_fetch_array($respuesta)){
-                                                    echo "<option value=".$row[id].">".$row[id]."</option>";
-                                            }
-                                                ?>
-
-                                            </select>
-                              </div>
+							<div class="form-group">
+                                <label>No. Area deportiva*</label>
+                                <select id="nroom" name="nroom" class="form-control" required>
+                                    <option value='0' >--Seleccione--</option>
+                                </select>
+                            </div>
 							 
 							 
 							  <div class="form-group">
                                             <label name>Desea un Asistente?</label><br>
-                                            <input type="checkbox" value="aceptado" name="asis" default="rechazo"> <label for="asis"> SI</label> 
+                                            <input type="checkbox" value="SI" name="asis" default="NO"> <label for="asis"> SI</label> 
                                   
                               </div>
 							  <div class="form-group">
@@ -160,7 +155,7 @@ INFORMACION PERSONAL
 							
 							
 									//$con=mysqli_connect("localhost","root","","hotel");
-                                    include('db.php');
+                                    /*include('db.php');
                                     
 									$check="SELECT * FROM roombook WHERE email = '$_POST[email]'";
 									$rs = mysqli_query($con,$check);
@@ -177,8 +172,8 @@ INFORMACION PERSONAL
 									}
 
 									else
-									{
-										$new ="No Confirmada";
+									{*/
+										$new ="No Confirmado";
                                         
                                     //Calculo de tiempo de estancia     
                                         $hora1= new DateTime("$_POST[hora_entrada]");
@@ -191,17 +186,17 @@ INFORMACION PERSONAL
                                         $estancia=(double)$estancia;
                                         //echo "<script type='text/javascript'> alert('".$estancia."')</script>";
                                         
-                                        if(isset($_POST['asis'])){
-                                            $newUser="INSERT INTO `roombook`(`FName`, `LName`, `Email`, `Phone`, `TRoom`,`Bed`,`NRoom`, `cin`,`stat`,`nodays`,`InicioHora`,`FinHora`) VALUES ('$_POST[fname]','$_POST[lname]','$_POST[email]','$_POST[phone]','$_POST[troom]','$_POST[asis]','$_POST[nroom]','$_POST[cin]','$new','$estancia','$_POST[hora_entrada]','$_POST[hora_salida]')";    
-                                            
-                                        }else{
-                                            $rechazado="rechazado";
-                                            $newUser="INSERT INTO `roombook`(`FName`, `LName`, `Email`, `Phone`, `TRoom`,`Bed`,`NRoom`, `cin`,`stat`,`nodays`,`InicioHora`,`FinHora`) VALUES ('$_POST[fname]','$_POST[lname]','$_POST[email]','$_POST[phone]','$_POST[troom]','$rechazado','$_POST[nroom]','$_POST[cin]','$new','$estancia','$_POST[hora_entrada]','$_POST[hora_salida]')";    
-                                            
+                                        $dipsql ="select * from validarsocio where email= '$_POST[email]'";
+	                                    $dispre= mysqli_query($con,$dipsql);
+	                                    $socios=0;
+                                        $responsable=1;
+
+                                        while($row=mysqli_fetch_array($dispre)){
+                                            $socios=$row['socio'];
                                         }
+                                        
+                                        $newUser="INSERT INTO `reservacion` (`fechaentrada`,`iniciohora`, `finhora`,`nhoras`,`asistente`,`estado`,`socio`,`responsable`,`areadepor`) VALUES ('$_POST[cin]','$_POST[hora_entrada]','$_POST[hora_salida]','$estancia','$_POST[asis]','$new','$socios','$responsable','$_POST[nroom]')";    
 
-
-										
 										if (mysqli_query($con,$newUser))
 										{
 											
@@ -229,7 +224,7 @@ INFORMACION PERSONAL
                                             </div> 
 										<?php	
 										}
-									}
+									//}
 
 							
 							
@@ -273,3 +268,34 @@ INFORMACION PERSONAL
    
 </body>
 </html>
+
+<script type="text/javascript">
+	function recargarLista(val){
+		$.ajax({
+			type:"POST",
+			url:"reservation.php",
+			data:"disciplina=" + val,
+			success:function(r){
+				$('#nroom').html(r);
+			}
+		});
+	}
+</script>
+
+<?php 
+    $disciplina=$_POST['disciplina'];
+
+    $sql="SELECT idarea, nombre
+    from areadeport 
+    where disciplina='$disciplina'";
+
+    $result=mysqli_query($con,$sql);
+
+    $cadena="<option value='0' >--Seleccione--</option>";
+
+    while ($row=mysqli_fetch_array($result)) {
+        $cadena=$cadena.'<option value='.$row['idarea'].'>'.$row['idarea']." ".$row['nombre'].'</option>';
+    }
+
+    echo  $cadena;
+?>
