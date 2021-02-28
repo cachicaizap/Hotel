@@ -4,7 +4,7 @@ include('db.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>SUNRISE HOTEL</title>
+<title>Proyecto de Servicios Turisticos</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -40,7 +40,7 @@ include('db.php');
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.php"> Centro de <span>Reservas</span><p class="logo_w3l_agile_caption">Accede a tus Reservaciones</p></a></h1>
+					<h1><a class="navbar-brand" href="index.php"> Centro de<span>Reservas</span><p class="logo_w3l_agile_caption">Accede a tus Reservaciones</p></a></h1>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -104,7 +104,7 @@ include('db.php');
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4>AMANECER</h4>
-								<h3>wquiero unas vacaciones lujosas?</h3>
+								<h3>quiero unas vacaciones lujosas?</h3>
 										<p>Obtenga alojamiento hoy</p>
 									<div class="agileits_w3layouts_more menu__item">
 											<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">leer más</a>
@@ -136,7 +136,7 @@ include('db.php');
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
 										<h4>SOL
   <span>SUBIR</span></h4>
-										<img src="images/1.jpg" alt=" " class="img-responsive">
+										<img src="images/guz1.jpg" alt=" " class="img-responsive">
 										<h5>Sabemos lo que amas</h5>
 										<p>Ofrecer a los huéspedes vistas únicas y encantadoras desde sus habitaciones con sus comodidades excepcionales, hace que Star Hotel sea uno de los mejores en su tipo. Pruebe nuestro menú de comida, servicios increíbles y un personal amable mientras esté aquí..</p>
 									</div>
@@ -160,7 +160,7 @@ include('db.php');
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">Acerca de nuestras Instalaciones
 </h3> 
-						   <p class="about-para-w3ls"> Lorem Ipsum es simplemente un texto simulado de la industria de impresión y composición tipográfica. Laca tempient vestibulum blandit faucibus. Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, en imperdiet urna
+						   <p class="about-para-w3ls">SANTY Lorem Ipsum es simplemente un texto simulado de la industria de impresión y composición tipográfica. Laca tempient vestibulum blandit faucibus. Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, en imperdiet urna
 </p>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
@@ -434,7 +434,7 @@ E</h4>
 	 <!-- rooms & rates -->
       <div class="plans-section" id="rooms">
 				 <div class="container">
-				 <h3 class="title-w3-agileits title-black-wthree">Habitaciones y tarifas
+				 <h3 class="title-w3-agileits title-black-wthree">Areas Deportivas y sus tarifas
 </h3>
 						<div class="priceing-table-main">
 				 <div class="col-md-3 price-grid">
