@@ -435,15 +435,16 @@ E</h4>
 	 <!-- rooms & rates -->
       <div class="plans-section" id="rooms">
 				 <div class="container">
-				 <h3 class="title-w3-agileits title-black-wthree">Areas Deportivas y sus tarifas
+				 <h3 class="title-w3-agileits title-black-wthree">Areas Deportivas
 </h3>
 						<div class="priceing-table-main">
 				 <div class="col-md-3 price-grid">
 					<div class="price-block agile">
+						<div class="price-gd-top-copia">
+							<h4>Fútbol</h4>
+						</div>
 						<div class="price-gd-top">
-						<img src="images/r01.jpg" alt=" " class="img-responsive" />
-							<h4>Cancha de futbol
-</h4>
+							<img src="images/r01.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="price-gd-bottom">
 							   <div class="price-list">
@@ -457,19 +458,19 @@ E</h4>
 								     </ul>
 							</div>
 							<div class="price-selet">	
-								<h3><span>$</span>30</h3>						
-								<a href="admin/reservation.php" >	Reservar ahora
-</a>
+									
+								<a href="admin/reservation.php" >Reservar ahora</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 price-grid ">
 					<div class="price-block agile">
+					<div class="price-gd-top-copia">
+							<h4>Ecuavoly</h4>
+						</div>
 						<div class="price-gd-top">
 						<img src="images/r02.jpg" alt=" " class="img-responsive" />
-							<h4>Cancha de ecuavoly
-</h4>
 						</div>
 						<div class="price-gd-bottom">
 							<div class="price-list">
@@ -482,7 +483,6 @@ E</h4>
 								</ul>
 							</div>
 							<div class="price-selet">
-								<h3><span>$</span>50</h3>
 								<a href="admin/reservation.php" >Reservar ahora
 </a>
 							</div>
@@ -491,10 +491,11 @@ E</h4>
 				</div>
 				<div class="col-md-3 price-grid lost">
 					<div class="price-block agile">
+						<div class="price-gd-top-copia">
+							<h4>Basketball</h4>
+						</div>
 						<div class="price-gd-top">
 						<img src="images/r03.jpg" alt=" " class="img-responsive" />
-							<h4>Cancha de basquetbol
-e</h4>
 						</div>
 						<div class="price-gd-bottom">
 							<div class="price-list">
@@ -507,7 +508,6 @@ e</h4>
 								</ul>
 							</div>
 							<div class="price-selet">
-								<h3><span>$</span>25</h3>
 								<a href="admin/reservation.php" >Reservar ahora
 </a>
 							</div>
@@ -516,10 +516,11 @@ e</h4>
 				</div>
 				<div class="col-md-3 price-grid wthree lost">
 					<div class="price-block agile">
+						<div class="price-gd-top-copia">
+						<h4>Pisina</h4>
+						</div>
 						<div class="price-gd-top ">
 							<img src="images/r04.jpg" alt=" " class="img-responsive" />
-							<h4>Pisina
-</h4>
 						</div>
 						<div class="price-gd-bottom">
 							<div class="price-list">
@@ -532,9 +533,7 @@ e</h4>
 								</ul>
 							</div>
 							<div class="price-selet">
-								<h3><span>$</span> 15</h3>
-								<a href="admin/reservation.php" >Reservar ahora
-</a>
+								<a href="admin/reservation.php" >Reservar ahora</a>
 							</div>
 						</div>
 					</div>

@@ -165,10 +165,10 @@ tr:hover .cut { opacity: 1; }
 	ob_start();	
 	include('db.php');
 
-	$pid = $_GET['pid'];
+	//$pid = $_GET['pid'];
 	
 	
-    $sql ="select * from reservado where reserva = '$pid' ";
+    $sql="select * from reservado where reserva=(select max(reserva) from reservado)";
 	$re = mysqli_query($con,$sql);
 	while($row=mysqli_fetch_array($re))
 	{

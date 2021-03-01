@@ -78,10 +78,10 @@ if(!isset($_SESSION["user"]))
                         <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Reserva de habitacion</a>
                     </li>
                     <li>
-                        <a  href="payment.php"><i class="fa fa-qrcode"></i> Pago</a>
+                        <a  href="payment.php"><i class="fa fa-qrcode"></i> Reservaciones Confirmadas</a>
                     </li>
 					 <li>
-                        <a class="active-menu" href="profit.php"><i class="fa fa-qrcode"></i> Lucro</a>
+                        <a class="active-menu" href="profit.php"><i class="fa fa-qrcode"></i> Tiempo de Reservación</a>
                     </li>
                     
                     <li>
@@ -99,7 +99,7 @@ if(!isset($_SESSION["user"]))
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                           Detalles de ganancias<small> </small>
+                           Detalles de tiempo de reservación<small> </small>
                         </h1>
                     </div>
                 </div> 
@@ -114,14 +114,14 @@ if(!isset($_SESSION["user"]))
 				include('db.php');
 				
 					
-					$query = "SELECT * FROM payment";
+					$query = "SELECT * FROM reservado";
 					$result = mysqli_query($con, $query);
 					$chart_data = '';
-					$tot = '';
+					$tot = 0;
 					while($row = mysqli_fetch_array($result))
 					{
-					 $chart_data .= "{ date:'".$row["cout"]."', profit:".$row["fintot"] *10/100 ."}, ";
-					 $tot = $tot + $row["fintot"] *10/100;
+					 $chart_data .= "{ date:'".$row["nhoras"]*60 ." min', profit:".$row["nhoras"] *60 ."}, ";
+					 $tot = $tot + $row["nhoras"] *60;
 					}
 					$chart_data = substr($chart_data, 0, -2);
 				
@@ -141,13 +141,11 @@ if(!isset($_SESSION["user"]))
                                         <tr>
 											<th>ID</th>
                                             <th>Nombre</th>
-                                            <th>Registrarse</th>
-											<th>Revisa</th>
-                                            <th>Alquiler de la habitación</th>
-											<th>Alquiler de cama</th>
-											<th>Comidas </th>
-											<th>Gr.Total</th>
-											<th>Lucro</th>
+                                            <th>Área Deportiva</th>
+                                            <th>Fecha</th>
+											<th>Hora de Inicio</th>
+                                            <th>Hora de Fin</th>
+                                            <th>Duración</th>
 											
                                             
                                         </tr>
@@ -156,45 +154,38 @@ if(!isset($_SESSION["user"]))
                                         
 									<?php
 										
-										$sql="select * from payment";
+										$sql="select * from reservado";
 										$re = mysqli_query($con,$sql);
 										while($row = mysqli_fetch_array($re))
 										{
 										
-											$id = $row['id'];
+											$id = $row['reserva'];
 											
 											if($id % 2 ==1 )
 											{
 												echo"<tr class='gradeC'>
-													<td>".$row['id']." </td>
-													<td>".$row['title']." ".$row['fname']." ".$row['lname']."</td>
-													<td>".$row['cin']."</td>
-													<td>".$row['cout']."</td>
+													<td>".$row['reserva']." </td>
+													<td>".$row['nombre']." ".$row['apellido']."</td>
+                                                    <td>".$row['area']."</td>
+													<td>".$row['fechaentrada']."</td>
 													
-													
-													<td>$".$row['ttot']."</td>
-													<td>$".$row['mepr']."</td>
-													<td>$".$row['btot']."</td>
-													<td>$".$row['fintot']."</td>
-													<td>$".$row['fintot']*10/100 ."</td>
+													<td>".$row['iniciohora']."</td>
+                                                    <td>".$row['finhora']."</td>
+													<td>".$row['nhoras']*60 ." min</td>
 													</tr>";
 											}
 											else
 											{
 												echo"<tr class='gradeU'>
-													<td>".$row['id']." </td>
-													<td>".$row['title']." ".$row['fname']." ".$row['lname']."</td>
-													
-													<td>".$row['cin']."</td>
-													<td>".$row['cout']."</td>
-													
-													
-													<td>$".$row['ttot']."</td>
-													<td>$".$row['mepr']."</td>
-													<td>$".$row['btot']."</td>
-													<td>$".$row['fintot']."</td>
-													<td>$".$row['fintot']*10/100 ."</td>
-													</tr>";
+                                                    <td>".$row['reserva']." </td>
+                                                    <td>".$row['nombre']." ".$row['apellido']."</td>
+                                                    <td>".$row['area']."</td>
+                                                    <td>".$row['fechaentrada']."</td>
+                                                    
+                                                    <td>".$row['iniciohora']."</td>
+                                                    <td>".$row['finhora']."</td>
+                                                    <td>".$row['nhoras']*60 ." min</td>
+                                                    </tr>";
 											
 											}
 										

@@ -1252,6 +1252,17 @@ ul.resp-tabs-list {
     top: 9.6em;
     right: 0em;
 }
+
+.price-gd-top-copia h4 {
+    font-size: 1.5em;
+    color: #fff;
+    padding: 0.4em 1em;
+    background: #0f2453;
+    font-weight: 300;
+    right: 0em;
+	margin-bottom: 10px;
+}
+
 .price-selet h3 {
     padding: 0.2em 0em 0em 0em;
     font-size: 1.7em;

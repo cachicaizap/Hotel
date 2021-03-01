@@ -94,13 +94,13 @@ if(!isset($_SESSION["user"]))
                 <div class="col-md-5 col-sm-5">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                         AGREGAR NUEVA SALA
+                         AGREGAR NUEVA ÁREA DEPORTIVA
 
                         </div>
                         <div class="panel-body">
 						<form name="form" method="post">
                             <div class="form-group">
-                                            <label> Tipo de habitación
+                                            <label> Disciplina
 *</label>
                                             <select name="troom"  class="form-control" required>
 												<option value selected ></option>
@@ -112,7 +112,7 @@ if(!isset($_SESSION["user"]))
                               </div>
 							  
 								<div class="form-group">
-                                            <label>Tipo de cama</label>
+                                            <label>Área Deportiva</label>
                                             <select name="bed" class="form-control" required>
 												<option value selected ></option>
                                                 <option value="Single">Simple</option>
@@ -124,7 +124,7 @@ if(!isset($_SESSION["user"]))
                                             </select>
                                             
                                </div>
-							 <input type="submit" name="add" value="Add New" class="btn btn-primary"> 
+							 <input type="submit" name="add" value="Añadir" class="btn btn-primary"> 
 							</form>
 							<?php
 							 include('db.php');
@@ -167,7 +167,7 @@ if(!isset($_SESSION["user"]))
                 <div class="col-md-6 col-sm-6">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                         INFORMACIÓN DE HABITACIONES
+                         INFORMACIÓN DE ÁREAS DEPORTIVAS
 
                         </div>
                         <div class="panel-body">
@@ -182,9 +182,9 @@ if(!isset($_SESSION["user"]))
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>Room ID</th>
-                                            <th>Room Type</th>
-											<th>Bedding</th>
+                                            <th>ID</th>
+                                            <th>DISCIPLINA</th>
+											<th>ÁREA DEPORTIVA</th>
                                             
                                         </tr>
                                     </thead>

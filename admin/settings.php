@@ -104,7 +104,7 @@ if(!isset($_SESSION["user"]))
 										while($row= mysqli_fetch_array($re))
 										{
 												$id = $row['type'];
-											if($id == "Superior Room") 
+											if($id == "Fútbol") 
 											{
 												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
 													<div class='panel panel-primary text-center no-boder bg-color-blue'>
@@ -119,7 +119,7 @@ if(!isset($_SESSION["user"]))
 													</div>
 												</div>";
 											}
-											else if ($id == "Deluxe Room")
+											else if ($id == "Basketball")
 											{
 												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
 													<div class='panel panel-primary text-center no-boder bg-color-green'>
@@ -135,7 +135,7 @@ if(!isset($_SESSION["user"]))
 												</div>";
 											
 											}
-											else if($id =="Guest House")
+											else if($id =="Piscina")
 											{
 												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
 													<div class='panel panel-primary text-center no-boder bg-color-brown'>

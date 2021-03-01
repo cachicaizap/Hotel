@@ -77,10 +77,10 @@ if(!isset($_SESSION["user"]))
 </a>
                     </li>
                     <li>
-                        <a href="payment.php"><i class="fa fa-qrcode"></i> Pago</a>
+                        <a href="payment.php"><i class="fa fa-qrcode"></i> Reservaciones Confirmadas</a>
                     </li>
                     <li>
-                        <a  href="profit.php"><i class="fa fa-qrcode"></i> Lucro</a>
+                        <a  href="profit.php"><i class="fa fa-qrcode"></i> Tiempo de Reservación</a>
                     </li>
                     <li>
                         <a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión
@@ -111,15 +111,15 @@ if(!isset($_SESSION["user"]))
                 <!-- /. ROW  -->
 				<?php
 						include ('db.php');
-						$sql = "select * from roombook";
+						$sql = "select * from reservado";
 						$re = mysqli_query($con,$sql);
 						$c =0;
 						while($row=mysqli_fetch_array($re) )
 						{
-								$new = $row['stat'];
-								$cin = $row['cin'];
-								$id = $row['id'];
-								if($new=="Not Conform")
+								$new = $row['estado'];
+								$cin = $row['fechaentrada'];
+								$id = $row['reserva'];
+								if($new=="No Confirmado")
 								{
 									$c = $c + 1;
 									
@@ -166,40 +166,35 @@ if(!isset($_SESSION["user"]))
                                             <th>#</th>
                                             <th>Nombre</th>
                                             <th>Email</th>
-                                            <th>Pais</th>
-											<th>Habitacion</th>
-											<th>Lecho</th>
-											<th>Comida</th>
-											<th>Registrarse</th>
-											<th>Revisa</th>
-											<th>estado</th>
+											<th>Area Deportiva</th>
+											<th>Asistente</th>
+											<th>Fecha de Solicitud</th>
+											<th>Estado</th>
 											<th>Más</th>
+                                            
 											
                                         </tr>
                                     </thead>
                                     <tbody>
                                         
 									<?php
-									$tsql = "select * from roombook";
+									$tsql = "select * from reservado";
 									$tre = mysqli_query($con,$tsql);
 									while($trow=mysqli_fetch_array($tre) )
 									{	
-										$co =$trow['stat']; 
-										if($co=="Not Conform")
+										$co =$trow['estado']; 
+										if($co=="No Confirmado")
 										{
 											echo"<tr>
-												<th>".$trow['id']."</th>
-												<th>".$trow['FName']." ".$trow['LName']."</th>
-												<th>".$trow['Email']."</th>
-												<th>".$trow['Country']."</th>
-												<th>".$trow['TRoom']."</th>
-												<th>".$trow['Bed']."</th>
-												<th>".$trow['Meal']."</th>
-												<th>".$trow['cin']."</th>
-												<th>".$trow['cout']."</th>
-												<th>".$trow['stat']."</th>
+												<th>".$trow['reserva']."</th>
+												<th>".$trow['nombre']." ".$trow['apellido']."</th>
+												<th>".$trow['email']."</th>
+												<th>".$trow['area']."</th>
+												<th>".$trow['asistente']."</th>
+												<th>".$trow['fechaentrada']."</th>
+												<th>".$trow['estado']."</th>
 												
-												<th><a href='roombook.php?rid=".$trow['id']." ' class='btn btn-primary'>Action</a></th>
+												<th><a href='roombook.php?rid=".$trow['reserva']." ' class='btn btn-primary'>Aprobar</a></th>
 												</tr>";
 										}	
 									
@@ -218,13 +213,13 @@ if(!isset($_SESSION["user"]))
                                 </div>
 								<?php
 								
-								$rsql = "SELECT * FROM `roombook`";
+								$rsql = "SELECT * FROM `reservado`";
 								$rre = mysqli_query($con,$rsql);
 								$r =0;
 								while($row=mysqli_fetch_array($rre) )
 								{		
-										$br = $row['stat'];
-										if($br=="Conform")
+										$br = $row['estado'];
+										if($br=="Confirmado")
 										{
 											$r = $r + 1;
 											
@@ -251,27 +246,27 @@ if(!isset($_SESSION["user"]))
                                     <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
                                         <div class="panel-body">
 										<?php
-										$msql = "SELECT * FROM `roombook`";
+										$msql = "SELECT * FROM `reservado`";
 										$mre = mysqli_query($con,$msql);
 										
 										while($mrow=mysqli_fetch_array($mre) )
 										{		
-											$br = $mrow['stat'];
-											if($br=="Conform")
+											$br = $mrow['estado'];
+											if($br=="Confirmado")
 											{
-												$fid = $mrow['id'];
+												$fid = $mrow['reserva'];
 												 
 											echo"<div class='col-md-3 col-sm-12 col-xs-12'>
 													<div class='panel panel-primary text-center no-boder bg-color-blue'>
 														<div class='panel-body'>
 															<i class='fa fa-users fa-5x'></i>
-															<h3>".$mrow['FName']."</h3>
+															<h3>".$mrow['nombre']."</h3>
 														</div>
 														<div class='panel-footer back-footer-blue'>
 														<a href=show.php?sid=".$fid ."><button  class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
 													Show
 													</button></a>
-															".$mrow['TRoom']."
+															".$mrow['area']."
 														</div>
 													</div>	
 											</div>";
