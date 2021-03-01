@@ -4,7 +4,7 @@ include('db.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>SUNRISE HOTEL</title>
+<title>Proyecto de Servicios Turisticos</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -40,7 +40,7 @@ include('db.php');
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.php"> Centro de <span>Reservas</span><p class="logo_w3l_agile_caption">Accede a tus Reservaciones</p></a></h1>
+					<h1><a class="navbar-brand" href="index.php"> Centro de<span>Reservas</span><p class="logo_w3l_agile_caption">Accede a tus Reservaciones</p></a></h1>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -73,9 +73,9 @@ include('db.php');
 
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>SUN RISE</h4>
+								<h4> Complejo deportivo uce</h4>
 									<h3>Sabemos lo que amas</h3>
-										<p>Bienvenido a nuestros hoteles
+										<p>Bienvenido a nuestras instalaciones
 </p>
 									<div class="agileits_w3layouts_more menu__item">
 				<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">leer más
@@ -103,9 +103,9 @@ include('db.php');
 						<div class="w3layouts-banner-top w3layouts-banner-top2">
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>AMANECER</h4>
-								<h3>wquiero unas vacaciones lujosas?</h3>
-										<p>Obtenga alojamiento hoy</p>
+								<h4>Cuida tu salud</h4>
+								<h3>Mejora tu calidad de vida</h3>
+										<p>Adquiera sus reservaciones hoy</p>
 									<div class="agileits_w3layouts_more menu__item">
 											<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">leer más</a>
 										</div>
@@ -136,8 +136,8 @@ include('db.php');
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
 										<h4>SOL
   <span>SUBIR</span></h4>
-										<img src="images/1.jpg" alt=" " class="img-responsive">
-										<h5>Sabemos lo que amaras</h5>
+										<img src="images/club6.jpg" alt=" " class="img-responsive">
+										<h5>Sabemos lo que amas</h5>
 										<p>Ofrecer a los huéspedes vistas únicas y encantadoras desde sus habitaciones con sus comodidades excepcionales, hace que Star Hotel sea uno de los mejores en su tipo. Pruebe nuestro menú de comida, servicios increíbles y un personal amable mientras esté aquí..</p>
 									</div>
 								</div>
@@ -160,16 +160,16 @@ include('db.php');
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">Acerca de nuestras Instalaciones
 </h3> 
-						   <p class="about-para-w3ls"> Lorem Ipsum es simplemente un texto simulado de la industria de impresión y composición tipográfica. Laca tempient vestibulum blandit faucibus. Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, en imperdiet urna
+						   <p class="about-para-w3ls">Esta organización cuenta con distintas areas deportivas comodas para nuestros usuarios como por ejemplo canchas de futbol, equavoly, basquetbol y pisinas.
 </p>
-						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
+						   <img src="images/about1.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
-											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
+											<img src="images/a01.jpg" class="img-responsive" alt="Hair Salon">
 										</div>
                                        <div class="w3ls-info-about">
 										    <h4>Te encantarán todas las comodidades que ofrecemos
 !</h4>
-											<p>que espero disfruta de tus vaciones con nosotros. </p>
+											<p>Practica tu deporte favorito con nosotros. </p>
 										</div>
 		          </div>
 		   	<div class="clearfix"> </div>
@@ -186,12 +186,12 @@ include('db.php');
 			 <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
 			 	<div class="advantage-block ">
 					<i class="fa fa-credit-card" aria-hidden="true"></i>
-			 		<h4>Quédate primero, paga después! </h4>
-			 		<p>Sin embargo, en ciertas circunstancias y el deber o la obligación se producen con frecuencia que los placeres tienen a sus funciones,
+			 		<h4>Diviertete primero, paga después! </h4>
+			 		<p>Adquiere tu menbresia ahora para que puedas acceder a los beneficios y promociones que ofrece este club ,
 .</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Habitación decorada, con aire acondicionado
+					<p><i class="fa fa-check" aria-hidden="true"></i>Canchas sinteticas, turco, saunas, gimnasio
 </p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Balcón privado
+					<p><i class="fa fa-check" aria-hidden="true"></i>Con todas las medidas de bioseguridad
 </p>
 			 		
 			 	</div>
@@ -199,13 +199,13 @@ include('db.php');
 			 <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
 			 	<div class="advantage-block">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
-			 		<h4>Restaurante las 24 horas
+			 		<h4>Restaurante 
 </h4>
-			 		<p>Sin embargo, en ciertas circunstancias y el deber o la obligación se producen con frecuencia que los placeres tienen a sus funciones,
+			 		<p>Servicio de bufé,
 .</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24 horas de servicio a la habitación
+					<p><i class="fa fa-check" aria-hidden="true"></i> Variedad de platos
 </p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Servicio de conserjería las 24 horas
+					<p><i class="fa fa-check" aria-hidden="true"></i> Comida vejetarina
 </p>
 			 	</div>
 			 </div>
@@ -225,7 +225,7 @@ include('db.php');
 						<img src="images/teams1.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
-						<img src="images/teams2.jpg" alt=" " class="img-responsive" />
+						<img src="images/teams02.jpg" alt=" " class="img-responsive" />
 					</li>
 					<li>
 						<img src="images/teams3.jpg" alt=" " class="img-responsive" />
@@ -239,10 +239,10 @@ include('db.php');
 						<div class="col-md-6 team-img-w3-agile">
 						</div>
 						<div class="col-md-6 team-Info-agileits">
-							<h4>tusolutionweb</h4>
+							<h4>Carlos </h4>
 							<span>Gerente
 </span>
-							<p>Lorem ipsum dolor sit amet, elit adipiscing del consectetur, tempor sed y vitalidad, por lo que el trabajo y dolor, algunas cosas importantes que hacer eiusmod. A través de los años por venir, equipo quis.Lorem
+							<p>Como director general altamente cualificado y con un largo historial en el mundo de la empresa, donde he cosechado importantes éxitos. Tras mi etapa como gerente en este prestigioso club he notado que prestar un buen servicio a nuestros clientes es la mejor carta de presentacion.
 .</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
@@ -259,11 +259,10 @@ include('db.php');
 					<div class="col-md-6 team-img-w3-agile">
 						</div>
 						<div class="col-md-6 team-Info-agileits">
-							<h4>Sarah Connor</h4>
+							<h4>Santiago</h4>
 							<span>Recepcionista
 </span>
-							<p>Estamos para ser de  tus vaciones las mej
-							or porque savemos que te esuferzas trabajando.te ofrecemos lo mejor .</p>	
+							<p>Soy una persona con iniciativa, excelente en la gestión de tareas en entornos de ritmo rápido, llevando un control preciso de clientes internos y externos, y en la entrega de servicios de manera excepcional.</p>	
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
@@ -279,9 +278,11 @@ include('db.php');
 						<div class="col-md-6 team-img-w3-agile">
 						</div>
 						<div class="col-md-6 team-Info-agileits">
-							<h4>Ivan Simpson</h4>
-							<span>Manager</span>
-							<p>Que eresperas para disfrutar los momentos mas inolvidables de tu vida.</p>
+							<h4>Jonathan</h4>
+							<span>administrador</span>
+							<p>
+							La administración y su relación con la Competitividad y la Innovación hace que nuestro trabajo este enfocado en la correcta organizacion y control de cada una de las areas que forman este prestigioso club.
+							</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
@@ -297,7 +298,7 @@ include('db.php');
 					<div class="col-md-6 team-img-w3-agile">
 						</div>
 						<div class="col-md-6 team-Info-agileits">
-							<h4>Marc Gutierrez</h4>
+							<h4>Henry</h4>
 							<span>Recepcionista</span>
 							<p>Porque siempre pensamos primero en nuestros clientes mesclamos comodidad con un precio economico.</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
@@ -321,7 +322,7 @@ include('db.php');
 		 <h3 class="title-w3-agileits title-black-wthree">Nuestra galería
 </h3>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
+					<a href="images/g01.jpg" class="swipebox"><img src="images/g01.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -330,7 +331,7 @@ include('db.php');
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
+					<a href="images/g02.jpg" class="swipebox"><img src="images/g02.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -339,7 +340,7 @@ include('db.php');
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
+					<a href="images/g03.jpg" class="swipebox"><img src="images/g03.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 E</h4>
@@ -348,7 +349,7 @@ E</h4>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
+					<a href="images/g04.jpg" class="swipebox"><img src="images/g04.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -357,7 +358,7 @@ E</h4>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g5.jpg" class="swipebox"><img src="images/g5.jpg" class="img-responsive" alt="/">
+					<a href="images/g05.jpg" class="swipebox"><img src="images/g05.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -366,7 +367,7 @@ E</h4>
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g6.jpg" class="swipebox"><img src="images/g6.jpg" class="img-responsive" alt="/">
+					<a href="images/g06.jpg" class="swipebox"><img src="images/g06.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -375,7 +376,7 @@ E</h4>
 				   </a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g6.jpg" class="swipebox"><img src="images/g7.jpg" class="img-responsive" alt="/">
+					<a href="images/g07.jpg" class="swipebox"><img src="images/g07.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -384,7 +385,7 @@ E</h4>
 				   </a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g6.jpg" class="swipebox"><img src="images/g8.jpg" class="img-responsive" alt="/">
+					<a href="images/g08.jpg" class="swipebox"><img src="images/g08.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -393,7 +394,7 @@ E</h4>
 				   </a>
 				</div>
 					<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g9.jpg" class="swipebox"><img src="images/g9.jpg" class="img-responsive" alt="/">
+					<a href="images/g09.jpg" class="swipebox"><img src="images/g09.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -402,7 +403,7 @@ E</h4>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g10.jpg" class="swipebox"><img src="images/g10.jpg" class="img-responsive" alt="/">
+					<a href="images/g010.jpg" class="swipebox"><img src="images/g010.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -411,7 +412,7 @@ E</h4>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
+					<a href="images/g04.jpg" class="swipebox"><img src="images/g04.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -420,7 +421,7 @@ E</h4>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
+					<a href="images/g02.jpg" class="swipebox"><img src="images/g02.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
 						<h4>AMANECER
 </h4>
@@ -434,14 +435,14 @@ E</h4>
 	 <!-- rooms & rates -->
       <div class="plans-section" id="rooms">
 				 <div class="container">
-				 <h3 class="title-w3-agileits title-black-wthree">Habitaciones y tarifas
+				 <h3 class="title-w3-agileits title-black-wthree">Areas Deportivas y sus tarifas
 </h3>
 						<div class="priceing-table-main">
 				 <div class="col-md-3 price-grid">
 					<div class="price-block agile">
 						<div class="price-gd-top">
-						<img src="images/r1.jpg" alt=" " class="img-responsive" />
-							<h4>Habitación de lujo
+						<img src="images/r01.jpg" alt=" " class="img-responsive" />
+							<h4>Cancha de futbol
 </h4>
 						</div>
 						<div class="price-gd-bottom">
@@ -456,7 +457,7 @@ E</h4>
 								     </ul>
 							</div>
 							<div class="price-selet">	
-								<h3><span>$</span>320</h3>						
+								<h3><span>$</span>30</h3>						
 								<a href="admin/reservation.php" >	Reservar ahora
 </a>
 							</div>
@@ -466,8 +467,8 @@ E</h4>
 				<div class="col-md-3 price-grid ">
 					<div class="price-block agile">
 						<div class="price-gd-top">
-						<img src="images/r2.jpg" alt=" " class="img-responsive" />
-							<h4>Habitación de lujo
+						<img src="images/r02.jpg" alt=" " class="img-responsive" />
+							<h4>Cancha de ecuavoly
 </h4>
 						</div>
 						<div class="price-gd-bottom">
@@ -481,7 +482,7 @@ E</h4>
 								</ul>
 							</div>
 							<div class="price-selet">
-								<h3><span>$</span>220</h3>
+								<h3><span>$</span>50</h3>
 								<a href="admin/reservation.php" >Reservar ahora
 </a>
 							</div>
@@ -491,8 +492,8 @@ E</h4>
 				<div class="col-md-3 price-grid lost">
 					<div class="price-block agile">
 						<div class="price-gd-top">
-						<img src="images/r3.jpg" alt=" " class="img-responsive" />
-							<h4>Casa de huespedes
+						<img src="images/r03.jpg" alt=" " class="img-responsive" />
+							<h4>Cancha de basquetbol
 e</h4>
 						</div>
 						<div class="price-gd-bottom">
@@ -506,7 +507,7 @@ e</h4>
 								</ul>
 							</div>
 							<div class="price-selet">
-								<h3><span>$</span>180</h3>
+								<h3><span>$</span>25</h3>
 								<a href="admin/reservation.php" >Reservar ahora
 </a>
 							</div>
@@ -516,8 +517,8 @@ e</h4>
 				<div class="col-md-3 price-grid wthree lost">
 					<div class="price-block agile">
 						<div class="price-gd-top ">
-							<img src="images/r4.jpg" alt=" " class="img-responsive" />
-							<h4>Habitación individual
+							<img src="images/r04.jpg" alt=" " class="img-responsive" />
+							<h4>Pisina
 </h4>
 						</div>
 						<div class="price-gd-bottom">
@@ -531,7 +532,7 @@ e</h4>
 								</ul>
 							</div>
 							<div class="price-selet">
-								<h3><span>$</span> 150</h3>
+								<h3><span>$</span> 15</h3>
 								<a href="admin/reservation.php" >Reservar ahora
 </a>
 							</div>
@@ -548,7 +549,7 @@ e</h4>
   <!-- visitors -->
 	<div class="w3l-visitors-agile" >
 		<div class="container">
-                 <h3 class="title-w3-agileits title-black-wthree">Qué otros visitantes experimentaron
+                 <h3 class="title-w3-agileits title-black-wthree">Opinion de los visitantes
 </h3> 
 		</div>
 		<div class="w3layouts_work_grids">
