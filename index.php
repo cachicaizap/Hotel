@@ -89,7 +89,7 @@ include('db.php');
 						<div class="w3layouts-banner-top w3layouts-banner-top1">
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>AMANECER</h4>
+								<h4>DESCUBRE</h4>
 									<h3>Quédate con amigos y familias</h3>
 										<p>Ven y disfruta un momento precioso con nosotros</p>
 									<div class="agileits_w3layouts_more menu__item">
@@ -160,7 +160,7 @@ include('db.php');
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">Acerca de nuestras Instalaciones
 </h3> 
-						   <p class="about-para-w3ls">Esta organización cuenta con distintas areas deportivas comodas para nuestros usuarios como por ejemplo canchas de futbol, equavoly, basquetbol y pisinas.
+						   <p class="about-para-w3ls">Esta organización cuenta con distintas areas deportivas comodas para nuestros usuarios como por ejemplo canchas de futbol, equavoly, basquetbol y piscinas.
 </p>
 						   <img src="images/about1.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
@@ -205,7 +205,7 @@ include('db.php');
 .</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i> Variedad de platos
 </p>
-					<p><i class="fa fa-check" aria-hidden="true"></i> Comida vejetarina
+					<p><i class="fa fa-check" aria-hidden="true"></i> Comida vegetarina
 </p>
 			 	</div>
 			 </div>
@@ -324,7 +324,8 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g01.jpg" class="swipebox"><img src="images/g01.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
+						
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
@@ -333,7 +334,8 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g02.jpg" class="swipebox"><img src="images/g02.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
+						
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
@@ -342,7 +344,8 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g03.jpg" class="swipebox"><img src="images/g03.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
+						
 E</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
@@ -351,7 +354,8 @@ E</h4>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g04.jpg" class="swipebox"><img src="images/g04.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
+						
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
@@ -360,7 +364,7 @@ E</h4>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g05.jpg" class="swipebox"><img src="images/g05.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
@@ -369,7 +373,7 @@ E</h4>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g06.jpg" class="swipebox"><img src="images/g06.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 					   </div>
@@ -378,7 +382,7 @@ E</h4>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g07.jpg" class="swipebox"><img src="images/g07.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 					   </div>
@@ -387,7 +391,7 @@ E</h4>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g08.jpg" class="swipebox"><img src="images/g08.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 					   </div>
@@ -396,7 +400,7 @@ E</h4>
 					<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g09.jpg" class="swipebox"><img src="images/g09.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
@@ -405,7 +409,7 @@ E</h4>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g010.jpg" class="swipebox"><img src="images/g010.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
@@ -414,7 +418,7 @@ E</h4>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g04.jpg" class="swipebox"><img src="images/g04.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
@@ -423,7 +427,7 @@ E</h4>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g02.jpg" class="swipebox"><img src="images/g02.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>AMANECER
+						<h4>DESCUBRE
 </h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
@@ -688,7 +692,7 @@ E</h4>
                     </div>
                     
                     
-                    <input type="submit" name="sub" value="Send Now" class="btn btn-primary">	
+                    <input type="submit" name="sub" value="Enviar" class="btn btn-primary">	
 				</form>
 				<?php
 				if(isset($_POST['sub']))
@@ -711,8 +715,8 @@ E</h4>
 			<h4>Conectate con nosotros
 </h4>
 			<p class="contact-agile1"><strong>Teléfono :</strong>+94 (65)222-44-55</p>
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:tusolutionweb@gmail.com">tusolutionweb@gmail.com</a></p>
-			<p class="contact-agile1"><strong>Direccion :</strong> lima, surco</p>
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:tusolutionweb@gmail.com">contacto@hotmail.com</a></p>
+			<p class="contact-agile1"><strong>Direccion :</strong> Sangolqui Ecuador</p>
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
@@ -729,7 +733,7 @@ E</h4>
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2018  <a href="index.php">AMENECER</a> </p>
+		        <p>©<a href="index.php">RESERVACIONES</a> </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
