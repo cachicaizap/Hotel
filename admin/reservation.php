@@ -194,8 +194,18 @@ INFORMACION PERSONAL
                                         while($row=mysqli_fetch_array($dispre)){
                                             $socios=$row['socio'];
                                         }
+
+
+                                        if(isset($_POST['asis'])){
+
+                                            $newUser="INSERT INTO `reservacion` (`fechaentrada`,`iniciohora`, `finhora`,`nhoras`,`asistente`,`estado`,`socio`,`responsable`,`areadepor`) VALUES ('$_POST[cin]','$_POST[hora_entrada]','$_POST[hora_salida]','$estancia','$_POST[asis]','$new','$socios','$responsable','$_POST[nroom]')";    
+
+                                        }else{
+                                            $NO="NO";
+                                            $newUser="INSERT INTO `reservacion` (`fechaentrada`,`iniciohora`, `finhora`,`nhoras`,`asistente`,`estado`,`socio`,`responsable`,`areadepor`) VALUES ('$_POST[cin]','$_POST[hora_entrada]','$_POST[hora_salida]','$estancia','$NO','$new','$socios','$responsable','$_POST[nroom]')";    
+                                        }
                                         
-                                        $newUser="INSERT INTO `reservacion` (`fechaentrada`,`iniciohora`, `finhora`,`nhoras`,`asistente`,`estado`,`socio`,`responsable`,`areadepor`) VALUES ('$_POST[cin]','$_POST[hora_entrada]','$_POST[hora_salida]','$estancia','$_POST[asis]','$new','$socios','$responsable','$_POST[nroom]')";    
+                                        
 
 										if (mysqli_query($con,$newUser))
 										{
