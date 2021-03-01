@@ -1,0 +1,18 @@
+.btn-success a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-success {
+    margin-right: 20px;
+}
+
+.agregacion-botones {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.agregacion-botones a {
+    color: white;
+    text-decoration: none;
+}
