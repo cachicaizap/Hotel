@@ -111,7 +111,7 @@ if(!isset($_SESSION["user"]))
                                     <thead>
                                         <tr>
                                             <th>Cod</th>
-                                            <th>Nombre</th>
+                                            <th>Nombres</th>
                                             <th>Email</th>
 											<th>Área Deportiva</th>
 											<th>Fecha de Solicitud</th>
