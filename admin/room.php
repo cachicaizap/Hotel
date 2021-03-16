@@ -133,7 +133,7 @@ if(!isset($_SESSION["user"]))
 								$disc = $_POST['disc'];
 								$adeport = $_POST['adeport'];
 								$aforo = $_POST['aforo'];
-                                $disp = 0;
+                                $disp = 1;
 							 
 										
 								$sql ="INSERT INTO `areadeport`(`nombre`,`aforo`,`disponible`,`disciplina`) VALUES ('$adeport','$aforo','$disp','$disc')" ;
