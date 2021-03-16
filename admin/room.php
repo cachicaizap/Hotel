@@ -1,4 +1,5 @@
-<?php  
+<?php 
+include('db.php');
 session_start();  
 if(!isset($_SESSION["user"]))
 {
@@ -10,7 +11,7 @@ if(!isset($_SESSION["user"]))
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> HOTEL Amanecer</title>
+    <title> Club Deportivo</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -30,7 +31,7 @@ if(!isset($_SESSION["user"]))
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php">MENÚ PRINCIPAL </a>
+                <a style="font-size: 25px" class="navbar-brand" href="home.php">MENÚ PRINCIPAL </a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -60,13 +61,13 @@ if(!isset($_SESSION["user"]))
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a  href="settings.php"><i class="fa fa-dashboard"></i>Estado de las habitaciones</a>
+                        <a  href="settings.php"><i class="fa fa-dashboard"></i>Estado de las áreas</a>
                     </li>
 					<li>
-                        <a  class="active-menu" href="room.php"><i class="fa fa-plus-circle"></i>Agregar habitación</a>
+                        <a  class="active-menu" href="room.php"><i class="fa fa-plus-circle"></i>Agregar área deportiva</a>
                     </li>
                     <li>
-                        <a  href="roomdel.php"><i class="fa fa-desktop"></i>Eliminar habitación</a>
+                        <a  href="roomdel.php"><i class="fa fa-desktop"></i>Eliminar área deportiva</a>
                     </li>
 					
 
@@ -83,7 +84,7 @@ if(!isset($_SESSION["user"]))
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                          NUEVO CUARTO <small></small>
+                          NUEVA ÁREA DEPORTIVA<small></small>
                         </h1>
                     </div>
                 </div> 
@@ -100,60 +101,48 @@ if(!isset($_SESSION["user"]))
                         <div class="panel-body">
 						<form name="form" method="post">
                             <div class="form-group">
-                                            <label> Disciplina
-*</label>
-                                            <select name="troom"  class="form-control" required>
-												<option value selected ></option>
-                                                <option value="Superior Room">HABITACIÓN SUPERIOR</option>
-                                                <option value="Deluxe Room">HABITACIÓN DE LUJO</option>
-												<option value="Guest House">CASA DE HUESPEDES</option>
-												<option value="Single Room">HABITACIÓN INDIVIDUAL</option>
-                                            </select>
-                              </div>
+                                <label> Disciplina*</label>
+                                    <select id="disc" name="disc"  class="form-control" required onChange="recargarLista(this.value)">
+                                        <option value="0" >--Seleccione--</option>
+                                        <?php
+                                            $consultar="select * from disciplina";
+                                            $resultado= mysqli_query($con,$consultar);
+                                            while($row=mysqli_fetch_array($resultado))
+                                            {
+                                                echo"<option value=".$row['idtipo'].">".$row['nombre']."</option>";
+                                            }
+                                        ?>
+                                    </select>
+                            </div>
 							  
-								<div class="form-group">
-                                            <label>Área Deportiva</label>
-                                            <select name="bed" class="form-control" required>
-												<option value selected ></option>
-                                                <option value="Single">Simple</option>
-                                                <option value="Double">Double</option>
-												<option value="Triple">Triple</option>
-                                                <option value="Quad">Cuadruple</option>
-												<option value="Triple">Ninguna</option>
-                                                                                             
-                                            </select>
-                                            
-                               </div>
+							<div class="form-group">
+                                    <label>Área Deportiva</label>
+                                    <input name="adeport" type ="text" class="form-control" required>  
+                            </div>
+
+                            <div class="form-group">
+                                    <label>Aforo</label>
+                                    <input name="aforo" type ="number" class="form-control" required>  
+                            </div>
+
 							 <input type="submit" name="add" value="Añadir" class="btn btn-primary"> 
 							</form>
 							<?php
-							 include('db.php');
 							 if(isset($_POST['add']))
 							 {
-										$room = $_POST['troom'];
-										$bed = $_POST['bed'];
-										$place = 'Free';
-										
-										$check="SELECT * FROM room WHERE type = '$room' AND bedding = '$bed'";
-										$rs = mysqli_query($con,$check);
-										$data = mysqli_fetch_array($rs, MYSQLI_NUM);
-										if($data[0] > 1) {
-											echo "<script type='text/javascript'> alert('Room Already in Exists')</script>";
-											
-										}
-
-										else
-										{
+								$disc = $_POST['disc'];
+								$adeport = $_POST['adeport'];
+								$aforo = $_POST['aforo'];
+                                $disp = 0;
 							 
 										
-										$sql ="INSERT INTO `room`( `type`, `bedding`,`place`) VALUES ('$room','$bed','$place')" ;
-										if(mysqli_query($con,$sql))
-										{
-										 echo '<script>alert("New Room Added") </script>' ;
-										}else {
-											echo '<script>alert("Sorry ! Check The System") </script>' ;
-										}
-							 }
+								$sql ="INSERT INTO `areadeport`(`nombre`,`aforo`,`disponible`,`disciplina`) VALUES ('$adeport','$aforo','$disp','$disc')" ;
+								if(mysqli_query($con,$sql))
+								{
+									echo '<script>alert("Se ha añadido con éxito") </script>' ;
+								}else {
+									echo '<script>alert("Lo siento ! Revise su sistema") </script>' ;
+								}
 							}
 							
 							?>

@@ -10,7 +10,7 @@ if(!isset($_SESSION["user"]))
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> HOTEL Amanecer</title>
+    <title> Club Deportivo</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -19,6 +19,8 @@ if(!isset($_SESSION["user"]))
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
      <!-- Google Fonts-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <script src="https://use.fontawesome.com/23fcd7082e.js"></script>
+   <script src="https://kit.fontawesome.com/3bd1533a22.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -30,7 +32,7 @@ if(!isset($_SESSION["user"]))
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php">MENÚ PRINCIPAL </a>
+                <a style="font-size: 25px" class="navbar-brand" href="home.php">MENÚ PRINCIPAL </a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -62,19 +64,14 @@ if(!isset($_SESSION["user"]))
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="settings.php"><i class="fa fa-dashboard"></i>Estado de la habitación
-</a>
+                        <a class="active-menu" href="settings.php"><i class="fa fa-dashboard"></i>Estado de las Áreas Deportivas</a>
                     </li>
 					<li>
-                        <a  href="room.php"><i class="fa fa-plus-circle"></i>Agregar habitación</a>
+                        <a  href="room.php"><i class="fa fa-plus-circle"></i>Agregar Área Deportiva</a>
                     </li>
                     <li>
-                        <a   href="roomdel.php"><i class="fa fa-pencil-square-o"></i> Eliminar habitación
-</a>
+                        <a   href="roomdel.php"><i class="fa fa-pencil-square-o"></i> Eliminar Área Deportiva</a>
                     </li>
-					
-
-                    
             </div>
 
         </nav>
@@ -86,7 +83,7 @@ if(!isset($_SESSION["user"]))
                     <div class="col-md-12">
                         <h1 class="page-header">
                            Disponible
- <small> Habitaciones</small>
+ <small> Áreas</small>
                         </h1>
                     </div>
                 </div> 
@@ -109,7 +106,7 @@ if(!isset($_SESSION["user"]))
 												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
 													<div class='panel panel-primary text-center no-boder bg-color-blue'>
 														<div class='panel-body'>
-															<i class='fa fa-users fa-5x'></i>
+															<i class='fa fa-futbol-o fa-5x'></i>
 															<h3>".$row['bedding']."</h3>
 														</div>
 														<div class='panel-footer back-footer-blue'>
@@ -124,7 +121,7 @@ if(!isset($_SESSION["user"]))
 												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
 													<div class='panel panel-primary text-center no-boder bg-color-green'>
 														<div class='panel-body'>
-															<i class='fa fa-users fa-5x'></i>
+                                                            <i class='fas fa-basketball-ball fa-5x'></i>
 															<h3>".$row['bedding']."</h3>
 														</div>
 														<div class='panel-footer back-footer-green'>
@@ -140,7 +137,7 @@ if(!isset($_SESSION["user"]))
 												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
 													<div class='panel panel-primary text-center no-boder bg-color-brown'>
 														<div class='panel-body'>
-															<i class='fa fa-users fa-5x'></i>
+                                                        <i class='fas fa-swimmer fa-5x'></i>
 															<h3>".$row['bedding']."</h3>
 														</div>
 														<div class='panel-footer back-footer-brown'>
