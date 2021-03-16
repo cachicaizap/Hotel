@@ -110,7 +110,7 @@ if(!isset($_SESSION["user"]))
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th>Cod</th>
                                             <th>Nombre</th>
                                             <th>Email</th>
 											<th>Área Deportiva</th>
