@@ -132,7 +132,7 @@ include('db.php');
                         <hr>
                         <div style="margin-bottom:5px" class="gallery-item">
                             <div class="gi-img">
-                                <img src="images/g05.jpg" alt="">
+                                <img src="static/img/gallery/golf.jpg" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Golf</h5>
@@ -152,7 +152,7 @@ include('db.php');
                         <hr>
                         <div style="margin-bottom:5px" class="gallery-item">
                             <div class="gi-img">
-                                <img src="images/g011.jpg" alt="">
+                                <img src="static/img/gallery/gallery-3.jpg" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Gimnasio</h5>
