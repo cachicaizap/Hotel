@@ -37,7 +37,7 @@ include('db.php');
         <div class="container">
             <div class="logo">
                 <a href="./index.html">
-                    <img src="static/img/logo-normal.png" alt="">
+                <img src="static/img/logo_castillo1.png" alt="">        
                 </a>
             </div>
             <div class="nav-menu">
@@ -66,7 +66,7 @@ include('db.php');
             <div class="row">
                 <div class="col-lg-12">
                     <div class="site-text">
-                        <h2>Portfolio</h2>
+                        <h2>GALERIA</h2>
                         <div class="site-breadcrumb">
                             <a href="../indice.php" class="sb-item">Inicio</a>
                             <span class="sb-item">Galería</span>
@@ -85,11 +85,11 @@ include('db.php');
                 <div class="col-lg-12 text-center">
                     <div class="filter-controls">
                         <ul>
-                            <li class="active" data-filter=".all">All Gallery</li>
-                            <li data-filter=".fitness">Fitness</li>
-                            <li data-filter=".coaching">Coaching</li>
-                            <li data-filter=".event">Event</li>
-                            <li data-filter=".other">Other</li>
+                            <li class="active" data-filter=".all">Todas las Imagenes</li>
+                            <li data-filter=".fitness">Areas Deportivas</li>
+                            <li data-filter=".coaching">Diviertete en Familia</li>
+                            <li data-filter=".event">Piscinas</li>
+                            <!-- <li data-filter=".other">Tennis</li> -->
                         </ul>
                     </div>
                 </div>
@@ -97,9 +97,9 @@ include('db.php');
             <div class="row gallery-filter">
                 <div class="col-md-8 mix all fitness">
                     <div class="gallery-item">
-                        <a id="open-popup" href="static/img/gallery/gallery-1.jpg">
+                        <a id="open-popup" href="static/img/gallery/author-1.png">
                             <div class="gi-img">
-                                <img src="static/img/gallery/gallery-1.jpg" alt="">
+                                <img src="static/img/gallery/author-1.png" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Sweet Berry Farm</h5>
@@ -113,7 +113,7 @@ include('db.php');
                         <div class="col-lg-12 mix all coaching event">
                             <div class="gallery-item">
                                 <div class="gi-img">
-                                    <img src="static/img/gallery/gallery-2.jpg" alt="">
+                                    <img src="static/img/gallery/p1.jpg" alt="">
                                 </div>
                                 <div class="gi-text">
                                     <h5>Sweet Berry Farm</h5>
@@ -124,7 +124,7 @@ include('db.php');
                         <div class="col-lg-12 mix all other fitness">
                             <div class="gallery-item">
                                 <div class="gi-img">
-                                    <img src="static/img/gallery/gallery-3.jpg" alt="">
+                                    <img src="static/img/gallery/author-4.png" alt="">
                                 </div>
                                 <div class="gi-text">
                                     <h5>Sweet Berry Farm</h5>
@@ -139,7 +139,7 @@ include('db.php');
                         <div class="col-lg-12 mix all coaching">
                             <div class="gallery-item">
                                 <div class="gi-img">
-                                    <img src="static/img/gallery/gallery-4.jpg" alt="">
+                                    <img src="static/img/gallery/author-5.jpg" alt="">
                                 </div>
                                 <div class="gi-text">
                                     <h5>Sweet Berry Farm</h5>
@@ -150,7 +150,7 @@ include('db.php');
                         <div class="col-lg-12 mix all other event">
                             <div class="gallery-item">
                                 <div class="gi-img">
-                                    <img src="static/img/gallery/gallery-5.jpg" alt="">
+                                    <img src="static/img/gallery/p2.jpg" alt="">
                                 </div>
                                 <div class="gi-text">
                                     <h5>Sweet Berry Farm</h5>
@@ -174,7 +174,7 @@ include('db.php');
                 <div class="col-lg-6 mix all event other">
                     <div class="gallery-item">
                         <div class="gi-img">
-                            <img src="static/img/gallery/gallery-7.jpg" alt="">
+                            <img src="static/img/gallery/p3.jpg" alt="">
                         </div>
                         <div class="gi-text">
                             <h5>Sweet Berry Farm</h5>

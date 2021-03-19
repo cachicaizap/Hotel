@@ -37,7 +37,7 @@
         <div class="container">
             <div class="logo">
                 <a href="./index.html">
-                    <img src="admin/static/img/logo.png" alt="">
+                <img src="static/img/logo_castillo1.png" alt="">        
                 </a>
             </div>
             <div class="nav-menu">
@@ -63,7 +63,7 @@
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <div class="hero-items owl-carousel">
-            <div class="single-hero-item set-bg" data-setbg="admin/static/img/slider-bg-1.jpg">
+            <div class="single-hero-item set-bg" data-setbg="admin/static/img/principal.jpg">
                 <div class="container">
                     <div class="hero-text">
                         <h4>Mejora tu calidad de vida</h4>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-item set-bg" data-setbg="admin/static/img/slider-bg-2.jpg">
+            <div class="single-hero-item set-bg" data-setbg="admin/static/img/principal2.jpg">
                 <div class="container">
                     <div class="hero-text">
                         <h4>Ven a disfrutar de un momento de esparcimiento</h4>
@@ -88,6 +88,7 @@
                         <h1>Bienvenido</h1>
                         <a href="#contact" class="primary-btn">Inscribete ahora</a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -166,7 +167,7 @@
                                         <div class="single-class-item">
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <img src="admin/static/img/class/author-1.jpg" alt="">
+                                                    <img src="admin/static/img/class/author-1.png" alt="">
                                                 </div>
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
@@ -190,7 +191,7 @@
                                         <div class="single-class-item">
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <img src="admin/static/img/class/author-2.jpg" alt="">
+                                                    <img src="admin/static/img/class/author-2.png" alt="">
                                                 </div>
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
@@ -214,7 +215,7 @@
                                         <div class="single-class-item">
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <img src="admin/static/img/class/author-3.jpg" alt="">
+                                                    <img src="admin/static/img/class/author-3.png" alt="">
                                                 </div>
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
@@ -238,7 +239,7 @@
                                         <div class="single-class-item">
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <img src="admin/static/img/class/author-4.jpg" alt="">
+                                                    <img src="admin/static/img/class/author-6.jpg" alt="">
                                                 </div>
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
@@ -286,7 +287,7 @@
                                         <div class="single-class-item">
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <img src="admin/static/img/class/author-6.jpg" alt="">
+                                                    <img src="admin/static/img/class/author-4.png" alt="">
                                                 </div>
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
@@ -317,7 +318,7 @@
                                     <li>
                                         <a data-toggle="tab" class="active" href="#class-1" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-1.jpg" alt="">
+                                                <img src="admin/static/img/class/author-1.png" alt="">
                                                 <h5>Canchas de Fútbol</h5>
                                             </div>
                                         </a>
@@ -325,7 +326,7 @@
                                     <li>
                                         <a data-toggle="tab" href="#class-2" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-2.jpg" alt="">
+                                                <img src="admin/static/img/class/author-2.png" alt="">
                                                 <h5>Canchas Básquetbol</h5>
                                             </div>
                                         </a>
@@ -333,7 +334,7 @@
                                     <li>
                                         <a data-toggle="tab" href="#class-3" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-3.jpg" alt="">
+                                                <img src="admin/static/img/class/author-3.png" alt="">
                                                 <h5>Campo de Golf</h5>
                                             </div>
                                         </a>
@@ -341,7 +342,7 @@
                                     <li>
                                         <a data-toggle="tab" href="#class-4" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-4.jpg" alt="">
+                                                <img src="admin/static/img/class/author-6.jpg" alt="">
                                                 <h5>Gimnasio</h5>
                                             </div>
                                         </a>
@@ -357,7 +358,7 @@
                                     <li>
                                         <a data-toggle="tab" href="#class-6" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-6.jpg" alt="">
+                                                <img src="admin/static/img/class/author-4.png" alt="">
                                                 <h5>Canchas de Tenis</h5>
                                             </div>
                                         </a>

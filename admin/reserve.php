@@ -37,8 +37,8 @@ include('db.php');
     <header id="home" class="header-section header-normal">
         <div class="container">
             <div class="logo">
-                <a href="./index.html">
-                    <img src="static/img/logo-normal.png" alt="">
+                <a href="./indice.html">
+                    <img src="static/img/logo_castillo1.png" alt="">                     
                 </a>
             </div>
             <div class="nav-menu">
@@ -132,7 +132,7 @@ include('db.php');
                         <hr>
                         <div style="margin-bottom:5px" class="gallery-item">
                             <div class="gi-img">
-                                <img src="static/img/gallery/golf.jpg" alt="">
+                                <img src="static/img/gallery/golf.png" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Golf</h5>

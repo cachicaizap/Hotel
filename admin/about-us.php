@@ -37,7 +37,7 @@ include('db.php');
         <div class="container">
             <div class="logo">
                 <a href="./index.html">
-                    <img src="static/img/logo-normal.png" alt="">
+                <img src="static/img/logo_castillo1.png" alt="">        
                 </a>
             </div>
             <div class="nav-menu">
@@ -84,15 +84,17 @@ include('db.php');
             <div class="row">
                 <div class="col-lg-5">
                     <div class="about-pic">
-                        <img src="static/img/about-us.jpg" alt="">
+                        <img src="static/img/video-bg1.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <div class="about-text">
                         <div class="section-title">
-                            <h2>Wellcome to Ponigym</h2>
-                            <p>Our dedicated Ponigym areas and fitness experts can help you discover new training
-                                techniques and exercises that offer a dynamic and efficient full-body workout.</p>
+                            <h2>Conoce Mas Acerca de Nosotros</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maiores consectetur, maxime ullam mollitia assumenda sit! Officia 
+                            rerum eum exercitationem maxime atque repudiandae enim nesciunt, 
+                            veniam quos ab accusantium rem quod!</p>
                         </div>
                         <p>Our fitness experts can help you discover new training techniques. Lorem ipsum dolor sit
                             amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -113,8 +115,8 @@ include('db.php');
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Why Choose Us</h2>
-                        <p>Our fitness experts can help you discover new training techniques.</p>
+                        <h2>Nuetros Servicios</h2>
+                        <p>Seguimos imnovando para ser los mejores.</p>
                     </div>
                 </div>
             </div>
@@ -123,28 +125,28 @@ include('db.php');
                     <div class="col-lg-3 col-sm-6">
                         <div class="ci-item">
                             <i class="ti-crown"></i>
-                            <h5>How do I become an author?</h5>
+                            <h5>Club Lider en el Pais</h5>
                             <p>Event Calendar and Event Calendar Pro full support out of the box.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="ci-item">
                             <i class="ti-package"></i>
-                            <h5>Is my license transferable?</h5>
+                            <h5>Divierte en Familia</h5>
                             <p>Event Calendar and Event Calendar Pro full support out of the box.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="ci-item">
                             <i class="ti-shopping-cart"></i>
-                            <h5>What do you mean by item?</h5>
+                            <h5>Adquiere tu Membresia</h5>
                             <p>Event Calendar and Event Calendar Pro full support out of the box.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="ci-item">
                             <i class="ti-user"></i>
-                            <h5>Top notch customer support</h5>
+                            <h5>Organiza tu evento</h5>
                             <p>Event Calendar and Event Calendar Pro full support out of the box.</p>
                         </div>
                     </div>
@@ -161,8 +163,8 @@ include('db.php');
                 <div class="col-lg-12">
                     <div class="col-lg-12">
                         <div class="section-title">
-                            <h2>Our Trainer</h2>
-                            <p>Our fitness experts can help you discover new training techniques.</p>
+                            <h2>Acerca de Nuestro Personal</h2>
+                            <p>Conoce un poco mas acerca de nuestro equipo de trabajo.</p>
                         </div>
                     </div>
                 </div>
@@ -171,11 +173,11 @@ include('db.php');
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-trainer-item">
                         <div class="trainer-pic">
-                            <img src="static/img/trainer/trainer-1.jpg" alt="">
+                            <img src="static/img/trainer/invitado3.jpg" alt="">
                         </div>
                         <div class="trainer-text">
                             <h5>Noah Leonard</h5>
-                            <span>Gymer</span>
+                            <span>Presidente del Club</span>
                             <div class="trainer-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -187,11 +189,27 @@ include('db.php');
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-trainer-item">
                         <div class="trainer-pic">
-                            <img src="static/img/trainer/trainer-2.jpg" alt="">
+                            <img src="static/img/trainer/invitado4.jpg" alt="">
                         </div>
                         <div class="trainer-text">
                             <h5>Noah Leonard</h5>
-                            <span>Gymer</span>
+                            <span>Secretaria</span>
+                            <div class="trainer-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-trainer-item">
+                        <div class="trainer-pic">
+                            <img src="static/img/trainer/trainer-1.jpg" alt="">
+                        </div>
+                        <div class="trainer-text">
+                            <h5>Noah Leonard</h5>
+                            <span>Recepcionista</span>
                             <div class="trainer-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -207,23 +225,7 @@ include('db.php');
                         </div>
                         <div class="trainer-text">
                             <h5>Noah Leonard</h5>
-                            <span>Gymer</span>
-                            <div class="trainer-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-trainer-item">
-                        <div class="trainer-pic">
-                            <img src="static/img/trainer/trainer-4.jpg" alt="">
-                        </div>
-                        <div class="trainer-text">
-                            <h5>Noah Leonard</h5>
-                            <span>Gymer</span>
+                            <span>Instructor Personal</span>
                             <div class="trainer-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
