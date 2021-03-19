@@ -72,10 +72,7 @@ if(!isset($_SESSION["user"]))
                         <a href="messages.php"><i class="fa fa-desktop"></i> Boletines informativos
 </a>
                     </li>
-					<li>
-                        <a href="roombook.php"><i class="fa fa-bar-chart-o"></i> Reserva de habitacion
-</a>
-                    </li>
+					
                     <li>
                         <a href="payment.php"><i class="fa fa-qrcode"></i> Reservaciones Confirmadas</a>
                     </li>

@@ -73,7 +73,7 @@ INFORMACION PERSONAL
 				
 				
 								<div class="form-group">
-                                            <label>Phone Number</label>
+                                            <label>Numero de Celular</label>
                                             <input name="phone" type ="text" class="form-control" required>
                                             
                                </div>

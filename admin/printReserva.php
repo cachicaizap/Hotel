@@ -197,7 +197,7 @@ tr:hover .cut { opacity: 1; }
 				<p>Amaguaña,<br>Sangolqui.</p>
 				<p>(+94) 65 222 44 55</p>
 			</address>
-			<span><img alt="" src="assets/img/sun.png"></span>
+			<span><img alt="" src="assets/img/logo.jpg"></span>
 		</header>
 		<article>
 			<h1>Recipiente</h1>
