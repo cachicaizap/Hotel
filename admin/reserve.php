@@ -37,7 +37,7 @@ include('db.php');
     <header id="home" class="header-section header-normal">
         <div class="container">
             <div class="logo">
-                <a href="./indice.html">
+                <a href="../indice.php">
                     <img src="static/img/logo_castillo1.png" alt="">                     
                 </a>
             </div>
