@@ -15,7 +15,7 @@ include('db.php')
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
      <!-- Google Fonts-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-   <link href="assets/css/main.css" rel="stylesheet" />
+   <link href="admin/assets/css/main.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -25,7 +25,7 @@ include('db.php')
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a  href="../index.php"><i class="fa fa-home"></i> Página principal</a>
+                        <a  href="../indice.php"><i class="fa fa-home"></i> Página principal</a>
                     </li>
                     
 					</ul>
@@ -34,13 +34,13 @@ include('db.php')
 
         </nav>
        
-        <div id="page-wrapper" >
+        <div id="page-wrapper" class="nuevo-color">
             <div id="page-inner">
 			 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-header">
-                            RESERVACION <small></small>
-                        </h1>
+                        <h2 class="page-header">
+                            RESERVACION <small>Horario de Atencion: Lunes a Domingo. Horas de atencion: 09:00 AM - 17:00 PM</small>
+                        </h2>
                     </div>
                 </div> 
                  
@@ -122,17 +122,17 @@ INFORMACION PERSONAL
                               </div>
 							  <div class="form-group">
                                             <label>Dia de Entrada</label>
-                                            <input name="cin" type ="date" class="form-control">
+                                           <input name="cin" type ="date" class="form-control" id="fecha">
                                             
                                </div>
 							   <div class="form-group">
                                             <label>Hora de Entrada</label>
-                                            <input name="hora_entrada" type ="time" class="form-control">
+                                            <input name="hora_entrada" type ="time" class="form-control" id="hora_entrada">
                                             
                                </div>
                                <div class="form-group">
                                             <label>Hora de Salida</label>
-                                            <input name="hora_salida" type ="time" class="form-control">
+                                            <input name="hora_salida" type ="time" class="form-control" id="hora_salida">
                                             
                                </div>
 
@@ -142,8 +142,8 @@ INFORMACION PERSONAL
                 </div>
 				
 				
-                <div class="col-md-12 col-sm-12">
-                    <div class="well">
+                <div class="col-md-12 col-sm-12 boton">
+                    <div class="well" >
                                             
 
 					<input type="submit" name="submit" id= bt_enviar class="btn btn-primary">
@@ -246,26 +246,28 @@ INFORMACION PERSONAL
                     
                     
                 </div>
+               
             </div>
            
                 
                 </div>
                     
             
-				
+                <div id="mensaje"> </div>
 					</div>
 			 <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
         </div>
         
-        
+
 
 
 
      <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
-    <script src="assets/js/modf.js"></script>
+    <script src="admin/assets/js/validaciones.js"></script>   
+    
     <!-- jQuery Js -->
     <script src="assets/js/jquery-1.10.2.js"></script>
       <!-- Bootstrap Js -->

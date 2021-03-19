@@ -14,7 +14,7 @@
   
   
      
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="admin/css/style.css">
 
   
 </head>
@@ -51,7 +51,7 @@
       </div> <!-- end login -->
 
     </div>
-    <div class="bottom">  <h3><a href="../index.php">SUN RISE HOMEPAGE</a></h3></div>
+    <div class="bottom">  <h3><a href="../index.php">Ingreso del Adminstrador: Castillo de Amaguaña</a></h3></div>
   
   
 </body>

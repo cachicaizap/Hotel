@@ -16,3 +16,11 @@
     color: white;
     text-decoration: none;
 }
+
+.ocultarBoton {
+    display: none;
+}
+
+.nuevo-color {
+    background-image: url("../static/img/contact-form-bg.jpg") !important;
+}
