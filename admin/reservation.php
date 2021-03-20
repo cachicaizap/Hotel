@@ -36,24 +36,23 @@ include('db.php')
        
         <div id="page-wrapper" class="nuevo-color">
             <div id="page-inner">
-			 <div class="row">
+			    <div class="row">
                     <div class="col-md-12">
                         <h2 class="page-header">
                             RESERVACION <small>Horario de Atencion: Lunes a Domingo. Horas de atencion: 09:00 AM - 17:00 PM</small>
                         </h2>
                     </div>
-                </div> 
-                 
+                </div>
                                  
             <div class="row">
                 
                 <div class="col-md-5 col-sm-5">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-INFORMACION PERSONAL
+                            INFORMACION PERSONAL
                         </div>
                         <div class="panel-body">
-						<form name="form" method="post">
+						    <form name="form" method="post">
                        
 							  <div class="form-group">
                                             <label>Nombre</label>
@@ -285,29 +284,11 @@ INFORMACION PERSONAL
 	function recargarLista(val){
 		$.ajax({
 			type:"POST",
-			url:"reservation.php",
-			data:"disciplina=" + val,
+			url:"selectcambio.php",
+			data:"disciplin=" + val,
 			success:function(r){
 				$('#nroom').html(r);
 			}
 		});
 	}
 </script>
-
-<?php 
-    $disciplina=$_POST['disciplina'];
-
-    $sql="SELECT idarea, nombre
-    from areadeport 
-    where disciplina='$disciplina'";
-
-    $result=mysqli_query($con,$sql);
-
-    $cadena="<option value='0' >--Seleccione--</option>";
-
-    while ($row=mysqli_fetch_array($result)) {
-        $cadena=$cadena.'<option value='.$row['idarea'].'>'.$row['idarea']." ".$row['nombre'].'</option>';
-    }
-
-    echo  $cadena;
-?>
