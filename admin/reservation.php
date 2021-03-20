@@ -6,7 +6,8 @@ include('db.php')
 <head class="cabeza">
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RESERVACION HOTEL Amanecer</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/flaticon.png">
+    <title>CLUB | Reservación</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -20,20 +21,21 @@ include('db.php')
 </head>
 <body>
     <div id="wrapper">
-        <nav class="navbar-default navbar-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">
+        <div style="heigth:100%;">
+            <nav class="navbar-default navbar-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav" id="main-menu">
 
-                    <li>
-                        <a  href="../indice.php"><i class="fa fa-home"></i> Página principal</a>
-                    </li>
-                    
-					</ul>
+                        <li>
+                            <a  href="../indice.php"><i class="fa fa-home"></i> Página principal</a>
+                        </li>
+                        
+                        </ul>
 
-            </div>
+                </div>
 
-        </nav>
-       
+            </nav>
+        
         <div id="page-wrapper" class="nuevo-color">
             <div id="page-inner">
 			    <div class="row">
@@ -83,6 +85,7 @@ include('db.php')
                 </div>
                 
                   
+            
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="panel panel-primary">
@@ -255,6 +258,7 @@ include('db.php')
                 <div id="mensaje"> </div>
 					</div>
 			 <!-- /. PAGE INNER  -->
+            </div>
             </div>
          <!-- /. PAGE WRAPPER  -->
         </div>
