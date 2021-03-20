@@ -10,6 +10,7 @@
     <meta name="keywords" content="PONIGYM, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="admin/static/img/flaticon.png">
     <title>CLUB | Inicio</title>
 
     <!-- Google Font -->
@@ -36,8 +37,8 @@
     <header id="home" class="header-section">
         <div class="container">
             <div class="logo">
-                <a href="./index.html">
-                <img src="static/img/logo_castillo1.png" alt="">        
+                <a href="../indice.php">
+                <img src="admin/static/img/logo2.png" alt="">        
                 </a>
             </div>
             <div class="nav-menu">
@@ -63,21 +64,25 @@
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <div class="hero-items owl-carousel">
-            <div class="single-hero-item set-bg" data-setbg="admin/static/img/principal.jpg">
-                <div class="container">
-                    <div class="hero-text">
-                        <h4>Mejora tu calidad de vida</h4>
-                        <h1>Cuida tu <span>Salud</span></h1>
-                        <a href="#contact" class="primary-btn">Inscribete ahora</a>
+            <div style="padding-top:0px" class="single-hero-item set-bg" data-setbg="admin/static/img/principal.jpg">
+                <div class="principal-hover">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h4>Mejora tu calidad de vida</h4>
+                            <h1>Cuida tu <span>Salud</span></h1>
+                            <a href="#contact" class="primary-btn">Inscribete ahora</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="single-hero-item set-bg" data-setbg="admin/static/img/principal2.jpg">
-                <div class="container">
-                    <div class="hero-text">
-                        <h4>Ven a disfrutar de un momento de esparcimiento</h4>
-                        <h1>Ponte en <span>Forma</span></h1>
-                        <a href="#contact" class="primary-btn">Inscribete ahora</a>
+            <div style="padding-top:0px" class="single-hero-item set-bg" data-setbg="admin/static/img/principal2.jpg">
+                <div class="principal-hover">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h4>Ven a disfrutar de un momento de esparcimiento</h4>
+                            <h1>Ponte en <span>Forma</span></h1>
+                            <a href="#contact" class="primary-btn">Inscribete ahora</a>
+                        </div>
                     </div>
                 </div>
             </div>
