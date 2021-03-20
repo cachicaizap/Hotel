@@ -69,9 +69,6 @@ if(!isset($_SESSION["user"]))
                     <li>
                         <a  href="messages.php"><i class="fa fa-desktop"></i> Boletines informativos</a>
                     </li>
-					<li>
-                        <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Reserva de habitacion</a>
-                    </li>
                     <li>
                         <a class="active-menu" href="payment.php"><i class="fa fa-qrcode"></i> Reservaciones Confirmadas</a>
                     </li>
@@ -79,8 +76,7 @@ if(!isset($_SESSION["user"]))
                         <a  href="profit.php"><i class="fa fa-qrcode"></i> Tiempo de Reservaciones</a>
                     </li>
                     <li>
-                        <a href="logout.php" ><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión
-</a>
+                        <a href="logout.php" ><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión/a>
                     </li>
                     
 
@@ -94,7 +90,7 @@ if(!isset($_SESSION["user"]))
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                          Detalles del pago<small> </small>
+                          Detalles de las Reservaciones<small> </small>
                         </h1>
                     </div>
                 </div> 

@@ -389,7 +389,7 @@
                                     <h2>Inscripción</h2>
                                     <p>Envia tu solicitud de Inscripción</p>
                                 </div>
-                                <form action="#">
+                                <form method="post">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <input type="text" placeholder="Nombre completo" name="name" id="name" required>
@@ -399,6 +399,8 @@
                                         </div>
                                         <div class="col-lg-12">
                                             <input type="tel" placeholder="Teléfono" name="phone" id="phone" required>
+                                        </div>
+                                        <div class="col-lg-12">
                                             <button type="submit" name="sub">Enviar <i class="ti-angle-double-right"></i></button>
                                         </div>
                                     </div>
@@ -409,12 +411,15 @@
                                         $name =$_POST['name'];
                                         $phone = $_POST['phone'];
                                         $email = $_POST['email'];
-                                        $approval = "Not Allowed";
+                                        $approval = "No Aprovado";
                                         $sql = "INSERT INTO `contact`(`fullname`, `phoneno`, `email`,`cdate`,`approval`) VALUES ('$name','$phone','$email',now(),'$approval')" ;
                                         
                                         
-                                        if(mysqli_query($con,$sql))
-                                        echo"Listo";
+                                        if(mysqli_query($con,$sql)){
+                                            echo"Listo";
+                                        }else{
+                                            echo"<script>alert('Error')</script>'";
+                                        }
                                         
                                     }
                                 ?>

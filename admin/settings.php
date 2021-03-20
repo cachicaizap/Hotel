@@ -42,7 +42,7 @@ if(!isset($_SESSION["user"]))
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i>Perfil del usuario
+                        <li><a href="usersetting.php"><i class="fa fa-user fa-fw"></i>Perfil del usuario
 </a>
                         </li>
                         <li><a href="settings.php"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>

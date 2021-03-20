@@ -67,21 +67,17 @@ if(!isset($_SESSION["user"]))
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a href="home.php"><i class="fa fa-dashboard"></i> estado</a>
+                        <a href="home.php"><i class="fa fa-dashboard"></i> Estado</a>
                     </li>
                     <li>
                         <a class="active-menu" href="messages.php"><i class="fa fa-desktop"></i> Boletines informativos
 </a>
                     </li>
-					<li>
-                        <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Reserva de habitacion
-</a>
+                    <li>
+                        <a href="Payment.php"><i class="fa fa-qrcode"></i> Reservaciones Confirmadas</a>
                     </li>
                     <li>
-                        <a href="Payment.php"><i class="fa fa-qrcode"></i> Pago</a>
-                    </li>
-                    <li>
-                        <a  href="profit.php"><i class="fa fa-qrcode"></i> Lucro</a>
+                        <a  href="profit.php"><i class="fa fa-qrcode"></i> Tiempo de Reservaciones</a>
                     </li>
                     <li>
                         <a href="logout.php" ><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión
@@ -164,7 +160,7 @@ if(!isset($_SESSION["user"]))
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerca</button>
 											
-                                           <input type="submit" name="log" value="Send" class="btn btn-primary">
+                                           <input type="submit" name="log" value="Enviar" class="btn btn-primary">
 										  </form>
 										   
                                         </div>
@@ -213,7 +209,7 @@ if(!isset($_SESSION["user"]))
                                             <th>Fecha</th>
 											<th>Estado</th>
 											<th>Aprobación</th>
-											<th>retirar</th>
+											<th>Retirar</th>
                                             
                                         </tr>
                                     </thead>
@@ -233,8 +229,8 @@ if(!isset($_SESSION["user"]))
 													<td>".$row['email']."</td>
 													<td>".$row['cdate']."</td>
 													<td>".$row['approval']."</td>
-													<td><a href=newsletter.php?eid=".$id ." <button class='btn btn-primary'> <i class='fa fa-edit' ></i> Permission</button></td>
-													<td><a href=newsletterdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Delete</button></td>
+													<td><a href=newsletter.php?eid=".$id ." <button class='btn btn-primary'> <i class='fa fa-edit' ></i> Admitir</button></td>
+													<td><a href=newsletterdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Eliminar</button></td>
 												</tr>";
 											}
 											else
@@ -245,8 +241,8 @@ if(!isset($_SESSION["user"]))
 													<td>".$row['email']."</td>
 													<td>".$row['cdate']."</td>
 													<td>".$row['approval']."</td>
-													<td><a href=newsletter.php?eid=".$id." <button class='btn btn-primary'> <i class='fa fa-edit' ></i> Permission</button></td>
-													<td><a href=newsletterdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Delete </button></td>		
+													<td><a href=newsletter.php?eid=".$id." <button class='btn btn-primary'> <i class='fa fa-edit' ></i> Admitir</button></td>
+													<td><a href=newsletterdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Eliminar </button></td>		
 												</tr>";
 											
 											}
