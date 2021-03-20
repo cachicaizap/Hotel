@@ -36,9 +36,9 @@ include('db.php');
     <!-- Header Section Begin -->
     <header id="home" class="header-section header-normal">
         <div class="container">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="static/img/logo-normal.png" alt="">
+            <div style="padding-top:15px" class="logo">
+                <a href="../indice.php">
+                <img src="static/img/logo_castillo1.jpg" alt="">        
                 </a>
             </div>
             <div class="nav-menu">
