@@ -68,8 +68,8 @@
                 <div class="principal-hover">
                     <div class="container">
                         <div class="hero-text">
-                            <h4>Mejora tu calidad de vida</h4>
-                            <h1>Cuida tu <span>Salud</span></h1>
+                            <h4>Adquiera sus reservaciones hoy</h4>
+                            <h1>Bienvenido</h1>
                             <a href="#contact" class="primary-btn">Inscribete ahora</a>
                         </div>
                     </div>
@@ -89,11 +89,10 @@
             <div class="single-hero-item set-bg" data-setbg="admin/static/img/slider-bg-3.jpg">
                 <div class="container">
                     <div class="hero-text">
-                        <h4>Adquiera sus reservaciones hoy</h4>
-                        <h1>Bienvenido</h1>
+                        <h4>Mejora tu calidad de vida</h4>
+                        <h1>Cuida tu <span>Salud</span></h1>
                         <a href="#contact" class="primary-btn">Inscribete ahora</a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -387,7 +386,7 @@
                         <div class="row">
                             <div class="col-lg-10">
                                 <div class="section-title">
-                                    <h2>Contáctenos</h2>
+                                    <h2>Inscripción</h2>
                                     <p>Envia tu solicitud de Inscripción</p>
                                 </div>
                                 <form action="#">

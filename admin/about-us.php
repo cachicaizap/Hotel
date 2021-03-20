@@ -249,7 +249,7 @@ include('db.php');
                         <div class="row">
                             <div class="col-lg-10">
                                 <div class="section-title">
-                                    <h2>Contáctenos</h2>
+                                    <h2>Inscripción</h2>
                                     <p>Envia tu solicitud de Inscripción</p>
                                 </div>
                                 <form action="#">
