@@ -53,9 +53,6 @@ include('db.php');
                         <li><a href="#contact">Contactos</a></li>
                     </ul>
                 </nav>
-                <div class="nav-right search-switch">
-                    <i class="ti-search"></i>
-                </div>
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>
@@ -70,7 +67,7 @@ include('db.php');
                     <div class="site-text">
                         <h2>Reservas</h2>
                         <div class="site-breadcrumb">
-                            <a href="../indice.php.php" class="sb-item">Inicio</a>
+                            <a href="../indice.php" class="sb-item">Inicio</a>
                             <span class="sb-item">Reservas</span>
                         </div>
                     </div>
