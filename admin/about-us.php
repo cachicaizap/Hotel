@@ -92,17 +92,14 @@ include('db.php');
                     <div class="about-text">
                         <div class="section-title">
                             <h2>Conoce Mas Acerca de Nosotros</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Maiores consectetur, maxime ullam mollitia assumenda sit! Officia 
-                            rerum eum exercitationem maxime atque repudiandae enim nesciunt, 
-                            veniam quos ab accusantium rem quod!</p>
+                            <p>En un lugar privilegiado por su clima, 
+                                rodeado de una generosa naturaleza, se edifican las 
+                                instalaciones del Club Castillo de Amaguaña.</p>
                         </div>
-                        <p>Our fitness experts can help you discover new training techniques. Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Un grupo de amigos quiteños visionarios, con la iniciativa 
+                            del Lcdo. José Luis Alvarez Burbano, deciden iniciar la aventura 
+                            de fundar un lugar en el que las familias acudan a liberarse de la 
+                            monotonía de la ciudad.</p>
                     </div>
                 </div>
             </div>

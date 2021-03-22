@@ -97,7 +97,7 @@ include('db.php');
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="blog-text">
-                                        <a href="./blog-details.html">
+                                        <a href="#">
                                             <h3>Are Crunches the Best Workout for Abs?</h3>
                                         </a>
                                         <p>It’s a moment many aspiring marathoners fantasize about as they finish their
@@ -123,7 +123,7 @@ include('db.php');
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="blog-text">
-                                        <a href="./blog-details.html">
+                                        <a href="#">
                                             <h3>How to Stop Muscle Cramps in Their Tracks</h3>
                                         </a>
                                         <p>It’s a moment many aspiring marathoners fantasize about as they finish their
@@ -149,7 +149,7 @@ include('db.php');
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="blog-text">
-                                        <a href="./blog-details.html">
+                                        <a href="#">
                                             <h3>Are Crunches the Best Workout for Abs?</h3>
                                         </a>
                                         <p>It’s a moment many aspiring marathoners fantasize about as they finish their
@@ -175,7 +175,7 @@ include('db.php');
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="blog-text">
-                                        <a href="./blog-details.html">
+                                        <a href="#">
                                             <h3>The 17 Most Amazing Fitness Vacations of 2014</h3>
                                         </a>
                                         <p>It’s a moment many aspiring marathoners fantasize about as they finish their
