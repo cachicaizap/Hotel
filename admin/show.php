@@ -1,9 +1,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Detalles de la clave del libro
-</title>
-		
+		<title>REGISTRO DE RESERVACION</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<script src="script.js"></script>
 		<style>
 		/* reset */
 
@@ -162,120 +163,114 @@ tr:hover .cut { opacity: 1; }
 	
 	<?php
 	ob_start();	
-	include ('db.php');
+	include('db.php');
 
-	$pid = $_GET['sid'];
+	//$pid = $_GET['pid'];
 	
 	
-	
-	$sql ="select * from roombook where id = '$pid' ";
+    $sql="select * from reservado where reserva=(select max(reserva) from reservado)";
 	$re = mysqli_query($con,$sql);
 	while($row=mysqli_fetch_array($re))
 	{
-		$id = $row['id'];
-		$title =  $row['Title'];
-		$Fname = $row['FName'];
-		$lname = $row['LName'];
-		$email = $row['Email'];
-		$National = $row['National'];
-		$country = $row['Country'];
-		$phone = $row['Phone'];
-		$room_type = $row['TRoom'];
-		$Bed_type = $row['Bed'];
-		//$Noof_room = $row['Nroom'];
-		$meal_type = $row['Meal'];
-		$cin_date = $row['cin'];
-		$cout_date = $row['cout'];
-		$nodays = $row['nodays'];
+		$id = $row['reserva'];
+		$fname = $row['nombre'];
+		$lname = $row['apellido'];
+        $email=$row['email'];
+        $phone=$row['telefono'];
+		$troom = $row['area'];
+		$bed = $row['asistente'];
+		$nroom = $row['narea'];
+		$cin = $row['fechaentrada'];
+		$estado = $row['estado'];
+        $n_dias= $row['nhoras'];
+        $inicio_hora= $row['iniciohora'];
+        $fin_hora= $row['finhora'];
 	
 	}
 	
-									
+	
 	?>
 		<header>
-			<h1>Información de Huésped
-</h1>
+			<h1>Información de la Reserva</h1>
 			<address >
-				<p> HOTEL Amenecer</p>
-				<p>New Kalmunani Road,<br>Batusai,<br>Sri Lanka.</p>
-				<p>(+94) 65 222 44 55</p>
+				<p>Castillo de Amaguaña</p>
+				<p>Amaguaña,<br>Sangolqui.</p>
+				<p>(+593) 222 4455</p>
 			</address>
-			<span><img alt="" src="assets/img/sun.png"></span>
+			<span><img alt="" src="assets/img/logo.jpg"></span>
 		</header>
 		<article>
-			<h1></h1>
+			<h1>Recipiente</h1>
 			<address >
-				
-				<p><br></p>
-				<p>Nombre del cliente  : -  <?php echo $title.$Fname." ".$lname;?><br></p>
+				<p>Socio: <?php echo $fname." ".$lname ?> <br></p>
 			</address>
 			<table class="meta">
 				<tr>
-					<th><span > ID Clientes</span></th>
+					<th><span >Reservacion #</span></th>
 					<td><span ><?php echo $id; ?></span></td>
 				</tr>
 				<tr>
-					<th><span >Fecha de entrada</span></th>
-					<td><span ><?php echo $cin_date; ?> </span></td>
+					<th><span >Fecha Reservacion</span></th>
+					<td><span ><?php echo $cin; ?> </span></td>
 				</tr>
 				<tr>
-					<th><span >Fecha de salida</span></th>
-					<td><span ><?php echo $cout_date; ?> </span></td>
+					<th><span >Tiempo de Reserva</span></th>
+					<td><span ><?php echo $n_dias; ?> horas</span></td>
 				</tr>
-				
+                <tr>
+					<th><span >Estado de la Reserva</span></th>
+					<td><span ><?php echo $estado; ?> </span></td>
+				</tr>
+
 			</table>
-			<table >
-					<tr> 
-						<td>Customer phone : -  <?php echo $phone; ?> </td>
-						
-						<td>Customer email : -  <?php echo $email; ?> </td>
-					</tr>
-					<tr> 
-						<td>País del cliente : -  <?php echo $country; ?> </td>
-						<td>Cliente Nacional : -  <?php echo $National; ?> </td>
-					</tr>
-				</table>
-				<br>
-				<br>
 			<table class="inventory">
 				<thead>
 					<tr>
-						<th><span >Item</span></th>
-						<th><span >No de dias</span></th>
-						
+						<th><span >Area Deportiva</span></th>
+						<th><span >No. Area Deportiva</span></th>
+						<th><span >Asistente</span></th>
+						<th><span >Hora Inicio</span></th>
+						<th><span >Hora Finalizacion</span></th>
 					</tr>
 				</thead>
 				<tbody>
-				
 					<tr>
-						<td><span ><?php echo $room_type; ?></span></td>
-						<td><span ><?php echo $nodays; ?> </span></td>
+						<td><span ><?php echo $troom; ?></span></td>
+						<td><span ><?php echo $nroom; ?> </span></td>
+						<td><span data-prefix></span><span><?php echo $bed; ?></span></td>
+						<td><span ><?php echo $inicio_hora;?> </span></td>
+                        <td><span ><?php echo $fin_hora;?> </span></td>
 						
 					</tr>
-					<tr>
-						<td><span ><?php echo $Bed_type; ?>  Bed </span></td>
-						<td><span ><?php echo $nodays; ?></span></td>
-						
-					</tr>
-					<tr>
-						<td><span ><?php echo $meal_type; ?>  </span></td>
-						<td><span ><?php echo $nodays; ?></span></td>
-						
-					</tr>
+					
 				</tbody>
 			</table>
 			
-			
 		</article>
 		<aside>
-			<h1><span >Contactenos</span></h1>
+			<h1><span >Contáctenos</span></h1>
 			<div >
-				<p align="center">Email :- tusolutionweb@gmail.com || Web :- http://tusolutionweb.blogspot.pe/ || Phone :- +94 65 222 44 55 </p>
+				<p align="center">Email tuemaiol@hotmail.com|| Web :- http://castilloAmaguaña.com/ || Phone :- +94 65 222 44 55 </p>
 			</div>
 		</aside>
 	</body>
 </html>
-
+<?php
+$free="Free";
+$nul = null;
+$rpsql = "UPDATE `room` SET `place`='$free',`cusid`='$nul' where `cusid`='$id'";
+if(mysqli_query($con,$rpsql))
+{
+    /*
+	$delsql= "DELETE FROM `roombook` WHERE id='$id' ";
+	
+	if(mysqli_query($con,$delsql))
+	{
+	
+	}
+    */
+}
+?>
 <?php 
 
 ob_end_flush();

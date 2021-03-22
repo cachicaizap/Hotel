@@ -211,7 +211,7 @@ include('db.php');
                                     <h2>Inscripción</h2>
                                     <p>Envia tu solicitud de Inscripción</p>
                                 </div>
-                                <form action="#">
+                                <form method="post">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <input type="text" placeholder="Nombre completo" name="name" id="name" required>

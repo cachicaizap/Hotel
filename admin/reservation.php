@@ -21,7 +21,6 @@ include('db.php')
 </head>
 <body>
     <div id="wrapper">
-        <div style="heigth:100%;">
             <nav class="navbar-default navbar-side" role="navigation">
                 <div class="sidebar-collapse">
                     <ul class="nav" id="main-menu">
@@ -258,7 +257,6 @@ include('db.php')
                 <div id="mensaje"> </div>
 					</div>
 			 <!-- /. PAGE INNER  -->
-            </div>
             </div>
          <!-- /. PAGE WRAPPER  -->
         </div>

@@ -97,7 +97,7 @@ include('db.php');
                         <hr>
                         <div style="margin-bottom:5px" class="gallery-item">
                             <div class="gi-img">
-                                <img src="images/g03.jpg" alt="">
+                                <img src="images/g03.jpg" height="250px" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Fútbol</h5>
@@ -115,7 +115,7 @@ include('db.php');
                         <hr>
                         <div style="margin-bottom:5px" class="gallery-item">
                             <div class="gi-img">
-                                <img src="images/g02.jpg" alt="">
+                                <img src="images/g02.jpg" height="250px" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Básquetbol</h5>
@@ -133,7 +133,7 @@ include('db.php');
                         <hr>
                         <div style="margin-bottom:5px" class="gallery-item">
                             <div class="gi-img">
-                                <img src="static/img/gallery/golf.png" alt="">
+                                <img src="static/img/gallery/golf.png" height="250px" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Golf</h5>
@@ -153,7 +153,7 @@ include('db.php');
                         <hr>
                         <div style="margin-bottom:5px" class="gallery-item">
                             <div class="gi-img">
-                                <img src="static/img/gallery/gallery-3.jpg" alt="">
+                                <img src="static/img/gallery/gallery-3.jpg" height="250px" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Gimnasio</h5>
@@ -171,7 +171,7 @@ include('db.php');
                         <hr>
                         <div style="margin-bottom:5px" class="gallery-item">
                             <div class="gi-img">
-                                <img src="images/g07.jpg" alt="">
+                                <img src="images/g07.jpg" height="250px" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Natación</h5>
@@ -189,10 +189,28 @@ include('db.php');
                         <hr>
                         <div style="margin-bottom:5px" class="gallery-item">
                             <div class="gi-img">
-                                <img src="images/g08.jpg" alt="">
+                                <img src="images/g08.jpg" height="250px" alt="">
                             </div>
                             <div class="gi-text">
                                 <h5>Tenis</h5>
+                                <span><i class="fa fa-baseball-ball"></i></span>
+                            </div>
+                        </div>
+                        <div class="latest-text">
+                            <h5><a href="reservation.php" class="primary-btn">Reservar</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div style="text-align:center" class="latest-items">
+                        <h4>Squash</h4>
+                        <hr>
+                        <div style="margin-bottom:5px" class="gallery-item">
+                            <div class="gi-img">
+                                <img src="static/img/class/author-7.jpg" height="250px" alt="">
+                            </div>
+                            <div class="gi-text">
+                                <h5>Squash</h5>
                                 <span><i class="fa fa-baseball-ball"></i></span>
                             </div>
                         </div>
@@ -218,7 +236,7 @@ include('db.php');
                                     <h2>Inscripción</h2>
                                     <p>Envia tu solicitud de Inscripción</p>
                                 </div>
-                                <form action="#">
+                                <form method="post">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <input type="text" placeholder="Nombre completo" name="name" id="name" required>

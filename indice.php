@@ -176,14 +176,8 @@
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
                                                         <h3>Canchas de Fútbol</h3>
-                                                        <p>Body Building, the original LES MILLS barbell class, will
-                                                            sculpt, tone and strengthen your entire body, fast! Focusing
-                                                            on low weight loads and high repetition movements, you'll
-                                                            burn fat, gain strength and quickly produce lean body muscle
-                                                            conditioning. All the benefits of working with weighs in one
-                                                            action packed, highly physical class. The world’s fastest
-                                                            way to get in shape. Find your Lessmills Bodypump class
-                                                            here.</p>
+                                                        <p>Ven a vivir tu pasión por el fútbol, en canchas diseñadas 
+                                                        para que disfrutes junto a tu familia y/o amigos de una experiencia deportiva inolvidable..</p>
                                                             <a href="admin/reserve.php" class="schedule-btn">Reserva ya <i
                                                                 class="fa fa-long-arrow-right"></i></a>
                                                     </div>
@@ -200,14 +194,8 @@
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
                                                         <h3>Canchas de Básquetbol</h3>
-                                                        <p>Body Building, the original LES MILLS barbell class, will
-                                                            sculpt, tone and strengthen your entire body, fast! Focusing
-                                                            on low weight loads and high repetition movements, you'll
-                                                            burn fat, gain strength and quickly produce lean body muscle
-                                                            conditioning. All the benefits of working with weighs in one
-                                                            action packed, highly physical class. The world’s fastest
-                                                            way to get in shape. Find your Lessmills Bodypump class
-                                                            here.</p>
+                                                        <p>Contamos con modernas y amplias 
+                                                        instalaciones que le permiten a nuestros socios vivir una experiencia inolvidable.</p>
                                                         <a href="admin/reserve.php" class="schedule-btn">Reserva ya <i
                                                                 class="fa fa-long-arrow-right"></i></a>
                                                     </div>
@@ -224,14 +212,8 @@
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
                                                         <h3>Campo de Golf</h3>
-                                                        <p>Body Building, the original LES MILLS barbell class, will
-                                                            sculpt, tone and strengthen your entire body, fast! Focusing
-                                                            on low weight loads and high repetition movements, you'll
-                                                            burn fat, gain strength and quickly produce lean body muscle
-                                                            conditioning. All the benefits of working with weighs in one
-                                                            action packed, highly physical class. The world’s fastest
-                                                            way to get in shape. Find your Lessmills Bodypump class
-                                                            here.</p>
+                                                        <p>Cuenta con 18 hoyos, rodeados de 14 lagos 
+                                                        artificiales y 61 bunkers, diseñados estratégicamente para incrementar el reto del golfista.</p>
                                                         <a href="admin/reserve.php" class="schedule-btn">Reserva ya <i
                                                                 class="fa fa-long-arrow-right"></i></a>
                                                     </div>
@@ -248,14 +230,8 @@
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
                                                         <h3>Gimnasio</h3>
-                                                        <p>Body Building, the original LES MILLS barbell class, will
-                                                            sculpt, tone and strengthen your entire body, fast! Focusing
-                                                            on low weight loads and high repetition movements, you'll
-                                                            burn fat, gain strength and quickly produce lean body muscle
-                                                            conditioning. All the benefits of working with weighs in one
-                                                            action packed, highly physical class. The world’s fastest
-                                                            way to get in shape. Find your Lessmills Bodypump class
-                                                            here.</p>
+                                                        <p>Nuestra completa línea de Accesorios Fitness, 
+                                                        permite la personalización de todo tipo de ejercicio, ajustándose a tu rutina.</p>
                                                         <a href="admin/reserve.php" class="schedule-btn">Reserva ya <i
                                                                 class="fa fa-long-arrow-right"></i></a>
                                                     </div>
@@ -272,14 +248,8 @@
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
                                                         <h3>Piscinas</h3>
-                                                        <p>Body Building, the original LES MILLS barbell class, will
-                                                            sculpt, tone and strengthen your entire body, fast! Focusing
-                                                            on low weight loads and high repetition movements, you'll
-                                                            burn fat, gain strength and quickly produce lean body muscle
-                                                            conditioning. All the benefits of working with weighs in one
-                                                            action packed, highly physical class. The world’s fastest
-                                                            way to get in shape. Find your Lessmills Bodypump class
-                                                            here.</p>
+                                                        <p>Contamos con una piscina semi olímpica, ideal 
+                                                        para momentos agradables entre tu familia y/o amigos.</p>
                                                         <a href="admin/reserve.php" class="schedule-btn">Reserva ya <i
                                                                 class="fa fa-long-arrow-right"></i></a>
                                                     </div>
@@ -296,14 +266,26 @@
                                                 <div class="col-lg-5 offset-lg-1">
                                                     <div class="class-text">
                                                         <h3>Canchas de Tenis</h3>
-                                                        <p>Body Building, the original LES MILLS barbell class, will
-                                                            sculpt, tone and strengthen your entire body, fast! Focusing
-                                                            on low weight loads and high repetition movements, you'll
-                                                            burn fat, gain strength and quickly produce lean body muscle
-                                                            conditioning. All the benefits of working with weighs in one
-                                                            action packed, highly physical class. The world’s fastest
-                                                            way to get in shape. Find your Lessmills Bodypump class
-                                                            here.</p>
+                                                        <p>Contamos con las mejores canchas para aprender 
+                                                        y practicar Tenis. Tu familia y tú merecen el mejor lugar.</p>
+                                                        <a href="admin/reserve.php" class="schedule-btn">Reserva ya <i
+                                                                class="fa fa-long-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="class-7" role="tabpanel">
+                                        <div class="single-class-item">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <img src="admin/static/img/class/author-7.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-5 offset-lg-1">
+                                                    <div class="class-text">
+                                                        <h3>Canchas de Squash</h3>
+                                                        <p>El espacio adecuando para disfrutar en familia o con 
+                                                        amigos de las mejores canchas de Squash.</p>
                                                         <a href="admin/reserve.php" class="schedule-btn">Reserva ya <i
                                                                 class="fa fa-long-arrow-right"></i></a>
                                                     </div>
@@ -322,7 +304,7 @@
                                     <li>
                                         <a data-toggle="tab" class="active" href="#class-1" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-1.png" alt="">
+                                                <img src="admin/static/img/class/author-1.png" height="110px" alt="">
                                                 <h5>Canchas de Fútbol</h5>
                                             </div>
                                         </a>
@@ -330,7 +312,7 @@
                                     <li>
                                         <a data-toggle="tab" href="#class-2" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-2.png" alt="">
+                                                <img src="admin/static/img/class/author-2.png" height="110px" alt="">
                                                 <h5>Canchas Básquetbol</h5>
                                             </div>
                                         </a>
@@ -338,7 +320,7 @@
                                     <li>
                                         <a data-toggle="tab" href="#class-3" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-3.png" alt="">
+                                                <img src="admin/static/img/class/author-3.png" height="110px" alt="">
                                                 <h5>Campo de Golf</h5>
                                             </div>
                                         </a>
@@ -346,7 +328,7 @@
                                     <li>
                                         <a data-toggle="tab" href="#class-4" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-6.jpg" alt="">
+                                                <img src="admin/static/img/class/author-6.jpg" height="110px" alt="">
                                                 <h5>Gimnasio</h5>
                                             </div>
                                         </a>
@@ -354,7 +336,7 @@
                                     <li>
                                         <a data-toggle="tab" href="#class-5" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-5.jpg" alt="">
+                                                <img src="admin/static/img/class/author-5.jpg" height="110px" alt="">
                                                 <h5>Pisicinas</h5>
                                             </div>
                                         </a>
@@ -362,8 +344,16 @@
                                     <li>
                                         <a data-toggle="tab" href="#class-6" role="tab">
                                             <div class="author-text">
-                                                <img src="admin/static/img/class/author-4.png" alt="">
+                                                <img src="admin/static/img/class/author-4.png" height="110px" alt="">
                                                 <h5>Canchas de Tenis</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#class-7" role="tab">
+                                            <div class="author-text">
+                                                <img src="admin/static/img/class/author-7.jpg" height="110px" alt="">
+                                                <h5>Canchas de Squash</h5>
                                             </div>
                                         </a>
                                     </li>

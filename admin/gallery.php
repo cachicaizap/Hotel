@@ -86,11 +86,7 @@ include('db.php');
                 <div class="col-lg-12 text-center">
                     <div class="filter-controls">
                         <ul>
-                            <li class="active" data-filter=".all">Todas las Imagenes</li>
-                            <li data-filter=".fitness">Areas Deportivas</li>
-                            <li data-filter=".coaching">Diviertete en Familia</li>
-                            <li data-filter=".event">Piscinas</li>
-                            <!-- <li data-filter=".other">Tennis</li> -->
+                            <li class="active" data-filter=".all">Imagenes</li>
                         </ul>
                     </div>
                 </div>
@@ -100,11 +96,11 @@ include('db.php');
                     <div class="gallery-item">
                         <a id="open-popup" href="static/img/gallery/author-1.png">
                             <div class="gi-img">
-                                <img src="static/img/gallery/author-1.png" alt="">
+                                <img src="static/img/gallery/author-1.png" height="500px" alt="">
                             </div>
                             <div class="gi-text">
-                                <h5>Sweet Berry Farm</h5>
-                                <span>Fitness, Event</span>
+                                <h5>Cancha de Fútbol</h5>
+                                <span>Fútbol</span>
                             </div>
 						</a>
                     </div>
@@ -113,24 +109,28 @@ include('db.php');
                     <div class="row">
                         <div class="col-lg-12 mix all coaching event">
                             <div class="gallery-item">
-                                <div class="gi-img">
-                                    <img src="static/img/gallery/p1.jpg" alt="">
-                                </div>
-                                <div class="gi-text">
-                                    <h5>Sweet Berry Farm</h5>
-                                    <span>Fitness, Event</span>
-                                </div>
+                                <a id="open-popup1" href="static/img/gallery/p1.jpg">
+                                    <div class="gi-img">
+                                        <img src="static/img/gallery/p1.jpg" height="235px" alt="">
+                                    </div>
+                                    <div class="gi-text">
+                                        <h5>Semi-Olimpica</h5>
+                                        <span>Piscina</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-12 mix all other fitness">
                             <div class="gallery-item">
-                                <div class="gi-img">
-                                    <img src="static/img/gallery/author-4.png" alt="">
-                                </div>
-                                <div class="gi-text">
-                                    <h5>Sweet Berry Farm</h5>
-                                    <span>Fitness, Event</span>
-                                </div>
+                                <a id="open-popup2" href="static/img/gallery/author-4.png">
+                                    <div class="gi-img">
+                                        <img src="static/img/gallery/author-4.png" height="235px" alt="">
+                                    </div>
+                                    <div class="gi-text">
+                                        <h5>Cancha de Tenis</h5>
+                                        <span>Tenis</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -139,48 +139,56 @@ include('db.php');
                     <div class="row">
                         <div class="col-lg-12 mix all coaching">
                             <div class="gallery-item">
-                                <div class="gi-img">
-                                    <img src="static/img/gallery/author-5.jpg" alt="">
-                                </div>
-                                <div class="gi-text">
-                                    <h5>Sweet Berry Farm</h5>
-                                    <span>Fitness, Event</span>
-                                </div>
+                                <a id="open-popup3" href="static/img/class/author-7.jpg">
+                                    <div class="gi-img">
+                                        <img src="static/img/class/author-7.jpg" height="220px" alt="">
+                                    </div>
+                                    <div class="gi-text">
+                                        <h5>Cancha de Squash</h5>
+                                        <span>Squash</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-12 mix all other event">
                             <div class="gallery-item">
-                                <div class="gi-img">
-                                    <img src="static/img/gallery/p2.jpg" alt="">
-                                </div>
-                                <div class="gi-text">
-                                    <h5>Sweet Berry Farm</h5>
-                                    <span>Fitness, Event</span>
-                                </div>
+                                <a id="open-popup4" href="static/img/class/author-2.png">
+                                    <div class="gi-img">
+                                        <img src="static/img/class/author-2.png" height="220px" alt="">
+                                    </div>
+                                    <div class="gi-text">
+                                        <h5>Cancha de Basketball</h5>
+                                        <span>Fitness, Event</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mix all coaching fitness">
                     <div class="gallery-item">
-                        <div class="gi-img">
-                            <img src="static/img/gallery/gallery-6.jpg" alt="">
-                        </div>
-                        <div class="gi-text">
-                            <h5>Sweet Berry Farm</h5>
-                            <span>Fitness, Event</span>
-                        </div>
+                        <a id="open-popup5" href="static/img/gallery/gallery-6.jpg">
+                            <div class="gi-img">
+                                <img src="static/img/gallery/gallery-6.jpg" height="470px" alt="">
+                            </div>
+                            <div class="gi-text">
+                                <h5>Gimnasio</h5>
+                                <span>Gym</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 mix all event other">
                     <div class="gallery-item">
-                        <div class="gi-img">
-                            <img src="static/img/gallery/p3.jpg" alt="">
-                        </div>
-                        <div class="gi-text">
-                            <h5>Sweet Berry Farm</h5>
-                            <span>Fitness, Event</span>
-                        </div>
+                        <a id="open-popup6" href="static/img/class/author-3.png">
+                            <div class="gi-img">
+                                <img src="static/img/class/author-3.png" height="470px" alt="">
+                            </div>
+                            <div class="gi-text">
+                                <h5>Campo de Golf</h5>
+                                <span>Golf</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -200,7 +208,7 @@ include('db.php');
                                     <h2>Inscripción</h2>
                                     <p>Envia tu solicitud de Inscripción</p>
                                 </div>
-                                <form action="#">
+                                <form method="post">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <input type="text" placeholder="Nombre completo" name="name" id="name" required>
@@ -309,6 +317,66 @@ include('db.php');
 </body>
 <script>
     $('#open-popup').magnificPopup({
+    src: "static/img/gallery/gallery-1.jpg",
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
+</script>
+
+<script>
+    $('#open-popup1').magnificPopup({
+    src: "static/img/gallery/gallery-1.jpg",
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
+</script>
+
+<script>
+    $('#open-popup2').magnificPopup({
+    src: "static/img/gallery/gallery-1.jpg",
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
+</script>
+
+<script>
+    $('#open-popup3').magnificPopup({
+    src: "static/img/gallery/gallery-1.jpg",
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
+</script>
+
+<script>
+    $('#open-popup4').magnificPopup({
+    src: "static/img/gallery/gallery-1.jpg",
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
+</script>
+
+<script>
+    $('#open-popup5').magnificPopup({
+    src: "static/img/gallery/gallery-1.jpg",
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
+</script>
+
+<script>
+    $('#open-popup6').magnificPopup({
     src: "static/img/gallery/gallery-1.jpg",
     gallery: {
       enabled: true

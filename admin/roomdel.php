@@ -9,7 +9,7 @@ ob_start();
 
 <?php
 include('db.php');
-$rsql ="select id, bedding, type from room";
+$rsql ="select id, bedding, type from room where dispo=1";
 $rre=mysqli_query($con,$rsql);
 
 ?>
@@ -169,68 +169,116 @@ $rre=mysqli_query($con,$rsql);
 										{
 												$id = $row['type'];
 												if($id == "Fútbol") 
-												{
-													echo"<div class='col-md-3 col-sm-12 col-xs-12'>
-														<div class='panel panel-primary text-center no-boder bg-color-blue'>
-															<div class='panel-body'>
-																<i class='fa fa-futbol-o fa-5x'></i>
-																<h3>".$row['bedding']."</h3>
-															</div>
-															<div class='panel-footer back-footer-blue'>
-																".$row['type']."
-	
-															</div>
+											{
+												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
+													<div class='panel panel-primary text-center no-boder bg-color-green'>
+														<div class='panel-body'>
+															<i class='fa fa-futbol-o fa-5x'></i>
+															<h3>".$row['bedding']."</h3>
 														</div>
-													</div>";
-												}
-												else if ($id == "Basketball")
-												{
-													echo"<div class='col-md-3 col-sm-12 col-xs-12'>
-														<div class='panel panel-primary text-center no-boder bg-color-green'>
-															<div class='panel-body'>
-																<i class='fas fa-basketball-ball fa-5x'></i>
-																<h3>".$row['bedding']."</h3>
-															</div>
-															<div class='panel-footer back-footer-green'>
-																".$row['type']."
-	
-															</div>
+														<div class='panel-footer back-footer-green'>
+															".$row['type']."
+
 														</div>
-													</div>";
-												
-												}
-												else if($id =="Piscina")
-												{
-													echo"<div class='col-md-3 col-sm-12 col-xs-12'>
-														<div class='panel panel-primary text-center no-boder bg-color-brown'>
-															<div class='panel-body'>
-															<i class='fas fa-swimmer fa-5x'></i>
-																<h3>".$row['bedding']."</h3>
-															</div>
-															<div class='panel-footer back-footer-brown'>
-																".$row['type']."
-	
-															</div>
+													</div>
+												</div>";
+											}
+											else if ($id == "Basketball")
+											{
+												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
+													<div class='panel panel-primary text-center no-boder bg-color-brown'>
+														<div class='panel-body'>
+                                                            <i class='fas fa-basketball-ball fa-5x'></i>
+															<h3>".$row['bedding']."</h3>
 														</div>
-													</div>";
-												
-												}
-												else if($id =="Single Room")
-												{
-													echo"<div class='col-md-3 col-sm-12 col-xs-12'>
-														<div class='panel panel-primary text-center no-boder bg-color-red'>
-															<div class='panel-body'>
-																<i class='fa fa-users fa-5x'></i>
-																<h3>".$row['bedding']."</h3>
-															</div>
-															<div class='panel-footer back-footer-red'>
-																".$row['type']."
-	
-															</div>
+														<div class='panel-footer back-footer-brown'>
+															".$row['type']."
+
 														</div>
-													</div>";
-												
-												}
+													</div>
+												</div>";
+											
+											}
+											else if($id =="Piscina")
+											{
+												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
+													<div class='panel panel-primary text-center no-boder bg-color-blue'>
+														<div class='panel-body'>
+                                                        <i class='fas fa-swimmer fa-5x'></i>
+															<h3>".$row['bedding']."</h3>
+														</div>
+														<div class='panel-footer back-footer-blue'>
+															".$row['type']."
+
+														</div>
+													</div>
+												</div>";
+											
+											}
+											else if($id =="Golf")
+											{
+												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
+													<div class='panel panel-primary text-center no-boder bg-color-green'>
+														<div class='panel-body'>
+															<i class='fa fa-golf-ball fa-5x'></i>
+															<h3>".$row['bedding']."</h3>
+														</div>
+														<div class='panel-footer back-footer-green'>
+															".$row['type']."
+
+														</div>
+													</div>
+												</div>";
+											
+											}
+                                            else if($id =="Gym")
+											{
+												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
+													<div class='panel panel-primary text-center no-boder bg-color-red'>
+														<div class='panel-body'>
+															<i class='fa fa-dumbbell fa-5x'></i>
+															<h3>".$row['bedding']."</h3>
+														</div>
+														<div class='panel-footer back-footer-red'>
+															".$row['type']."
+
+														</div>
+													</div>
+												</div>";
+											
+											}
+                                            else if($id =="Tenis")
+											{
+												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
+													<div class='panel panel-primary text-center no-boder bg-color-green'>
+														<div class='panel-body'>
+															<i class='fa fa-baseball-ball fa-5x'></i>
+															<h3>".$row['bedding']."</h3>
+														</div>
+														<div class='panel-footer back-footer-green'>
+															".$row['type']."
+
+														</div>
+													</div>
+												</div>";
+											
+											}
+                                            else if($id =="Squash")
+											{
+												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
+													<div class='panel panel-primary text-center no-boder bg-color-brown'>
+														<div class='panel-body'>
+															<i class='fa fa-baseball-ball fa-5x'></i>
+															<h3>".$row['bedding']."</h3>
+														</div>
+														<div class='panel-footer back-footer-brown'>
+															".$row['type']."
+
+														</div>
+													</div>
+												</div>";
+											
+											}
 										}
 									?>
                     

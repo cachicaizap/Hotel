@@ -195,7 +195,7 @@ tr:hover .cut { opacity: 1; }
 			<address >
 				<p>Castillo de Amaguaña</p>
 				<p>Amaguaña,<br>Sangolqui.</p>
-				<p>(+94) 65 222 44 55</p>
+				<p>(+593) 222 4455</p>
 			</address>
 			<span><img alt="" src="assets/img/logo.jpg"></span>
 		</header>

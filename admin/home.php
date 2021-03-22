@@ -145,7 +145,7 @@ if(!isset($_SESSION["user"]))
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 											<button class="btn btn-default" type="button">
-												Nueva reserva de habitaciones
+												Nueva reserva de areas deportivas
   <span class="badge"><?php echo $c ; ?></span>
 											</button>
 											</a>
@@ -233,7 +233,7 @@ if(!isset($_SESSION["user"]))
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
 											<button class="btn btn-primary" type="button">
-												 Cuartos reservados
+												 Areas deportivas Reservadas
  <span class="badge"><?php echo $r ; ?></span>
 											</button>
 											
@@ -261,7 +261,7 @@ if(!isset($_SESSION["user"]))
 														</div>
 														<div class='panel-footer back-footer-blue'>
 														<a href=show.php?sid=".$fid ."><button  class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
-													Show
+													Ver
 													</button></a>
 															".$mrow['area']."
 														</div>
